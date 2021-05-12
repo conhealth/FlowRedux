@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jetbrains.kotlinx:atomicfu-watchosx86:klib:cinterop-interop:0.15.1" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-watchosx86/0.15.1/3cc325c1bdcad814efcee4233beccef6d49ca87b/atomicfu-cinterop-interop.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-watchosx86/0.15.1/a17cc5394f05f8079e4ad48aaa42ecc78f1cd3c5/atomicfu-watchosx86-0.15.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

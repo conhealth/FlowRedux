@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":flowredux:watchosX86Test" external.linked.project.path="$MODULE_DIR$/../../../flowredux" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="com.freeletics.flowredux" external.system.module.type="sourceSet" external.system.module.version="0.5.0" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="java-gradle" name="Java-Gradle">
+      <configuration>
+        <option name="BUILD_FOLDER_PATH" value="$MODULE_DIR$/../../../flowredux/build" />
+        <option name="BUILDABLE" value="false" />
+      </configuration>
+    </facet>
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":flowredux" />
+        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" />
+        <option name="LAST_KNOWN_AGP_VERSION" />
+      </configuration>
+    </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="Native (watchos_x86) " allPlatforms="Native []/Native [watchos_x86]" useProjectSettings="false" isTestModule="true" externalProjectId=":flowredux" pureKotlinSourceFolders="$MODULE_DIR$/../../../flowredux/src/iosArm32Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/iosArm32Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/iosArm64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/iosArm64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/iosX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/iosX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/jvmMain/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/jvmTest/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/linuxX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/linuxX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/macosX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/macosX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/mingwX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/mingwX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/tvosArm64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/tvosArm64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/tvosX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/tvosX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/watchosArm32Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/watchosArm32Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/watchosArm64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/watchosArm64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/watchosX86Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/watchosX86Main/kotlin">
+        <dependsOnModuleNames>:flowredux:commonTest</dependsOnModuleNames>
+        <sourceSets>
+          <sourceSet>FlowRedux.flowredux.commonTest</sourceSet>
+          <sourceSet>FlowRedux.flowredux.nativeTest</sourceSet>
+          <sourceSet>FlowRedux.flowredux.watchosX86Main</sourceSet>
+          <sourceSet>FlowRedux.flowredux.commonMain</sourceSet>
+        </sourceSets>
+        <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
+        <externalSystemTestTasks>
+          <externalSystemTestTask>watchosX86Test|:flowredux:watchosX86Test|watchosX86</externalSystemTestTask>
+        </externalSystemTestTasks>
+        <compilerSettings />
+        <compilerArguments>
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="multiPlatform" value="true" />
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../../flowredux/build/classes/kotlin/watchosX86/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../flowredux/src/watchosX86Test" />
+    <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - stdlib" level="project" />
+    <orderEntry type="module" module-name="FlowRedux.flowredux.commonMain" scope="TEST" />
+    <orderEntry type="module" module-name="FlowRedux.flowredux.commonTest" scope="TEST" production-on-test="" />
+    <orderEntry type="module" module-name="FlowRedux.flowredux.nativeTest" scope="TEST" production-on-test="" />
+    <orderEntry type="module" module-name="FlowRedux.flowredux.watchosX86Main" scope="TEST" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - AVFoundation [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - AVKit [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - Accelerate [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - Accessibility [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - AuthenticationServices [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - ClockKit [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CloudKit [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CommonCrypto [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - Contacts [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreAudio [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreAudioTypes [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreBluetooth [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreData [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreFoundation [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreGraphics [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreLocation [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreML [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreMedia [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreMotion [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreServices [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreText [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreVideo [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - EventKit [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - Foundation [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - GameKit [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - HealthKit [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - HomeKit [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - ImageIO [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - Intents [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - MapKit [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - MediaPlayer [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - MobileCoreServices [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - NaturalLanguage [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - Network [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - NetworkExtension [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - PassKit [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - PushKit [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - SceneKit [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - Security [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - SoundAnalysis [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - SpriteKit [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - StoreKit [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - UIKit [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - UniformTypeIdentifiers [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - UserNotifications [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - WatchConnectivity [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - WatchKit [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - builtin [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - darwin [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - iconv [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - objc [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - posix [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - zlib [watchos_x86]" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-common:1.4.32" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.4.32" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.4.32" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: app.cash.turbine:turbine-watchosx86:klib:0.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchosx86:klib:1.4.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:atomicfu-watchosx86:klib:0.15.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:atomicfu-watchosx86:klib:cinterop-interop:0.15.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: app.cash.turbine:turbine:0.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.3" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="FlowRedux.flowredux.watchosX86Main" />
+</module>

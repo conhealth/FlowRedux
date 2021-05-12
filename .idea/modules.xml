@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlowRedux.iml" filepath="$PROJECT_DIR$/.idea/modules/FlowRedux.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.commonMain.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.commonMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.commonTest.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.commonTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.iosArm32Main.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.iosArm32Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.iosArm32Test.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.iosArm32Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.iosArm64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.iosArm64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.iosArm64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.iosArm64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.iosX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.iosX64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.iosX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.iosX64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.jvmMain.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.jvmMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.jvmTest.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.jvmTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.linuxX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.linuxX64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.linuxX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.linuxX64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.macosX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.macosX64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.macosX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.macosX64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.mingwX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.mingwX64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.mingwX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.mingwX64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.nativeMain.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.nativeMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.nativeTest.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.nativeTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.tvosArm64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.tvosArm64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.tvosArm64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.tvosArm64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.tvosX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.tvosX64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.tvosX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.tvosX64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.watchosArm32Main.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.watchosArm32Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.watchosArm32Test.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.watchosArm32Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.watchosArm64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.watchosArm64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.watchosArm64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.watchosArm64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.watchosX86Main.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.watchosX86Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.watchosX86Test.iml" filepath="$PROJECT_DIR$/.idea/modules/dsl/FlowRedux.dsl.watchosX86Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.commonMain.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.commonMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.commonTest.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.commonTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.iosArm32Main.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.iosArm32Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.iosArm32Test.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.iosArm32Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.iosArm64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.iosArm64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.iosArm64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.iosArm64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.iosX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.iosX64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.iosX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.iosX64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.jvmMain.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.jvmMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.jvmTest.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.jvmTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.linuxX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.linuxX64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.linuxX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.linuxX64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.macosX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.macosX64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.macosX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.macosX64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.mingwX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.mingwX64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.mingwX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.mingwX64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.nativeMain.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.nativeMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.nativeTest.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.nativeTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.tvosArm64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.tvosArm64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.tvosArm64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.tvosArm64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.tvosX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.tvosX64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.tvosX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.tvosX64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.watchosArm32Main.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.watchosArm32Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.watchosArm32Test.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.watchosArm32Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.watchosArm64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.watchosArm64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.watchosArm64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.watchosArm64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.watchosX86Main.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.watchosX86Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.watchosX86Test.iml" filepath="$PROJECT_DIR$/.idea/modules/flowredux/FlowRedux.flowredux.watchosX86Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/FlowRedux.sample.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/FlowRedux.sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/android/FlowRedux.sample.android.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/android/FlowRedux.sample.android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/shared_code/FlowRedux.sample.shared_code.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/shared_code/FlowRedux.sample.shared_code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/shared_code/FlowRedux.sample.shared_code.androidMain.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/shared_code/FlowRedux.sample.shared_code.androidMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/shared_code/FlowRedux.sample.shared_code.commonMain.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/shared_code/FlowRedux.sample.shared_code.commonMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/shared_code/FlowRedux.sample.shared_code.commonTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/shared_code/FlowRedux.sample.shared_code.commonTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/shared_code/FlowRedux.sample.shared_code.iOSMain.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/shared_code/FlowRedux.sample.shared_code.iOSMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/shared_code/FlowRedux.sample.shared_code.iOSTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/shared_code/FlowRedux.sample.shared_code.iOSTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/shared_code/FlowRedux.sample.shared_code.jvmMain.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/shared_code/FlowRedux.sample.shared_code.jvmMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/shared_code/FlowRedux.sample.shared_code.jvmTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/shared_code/FlowRedux.sample.shared_code.jvmTest.iml" />
+    </modules>
+  </component>
+</project>

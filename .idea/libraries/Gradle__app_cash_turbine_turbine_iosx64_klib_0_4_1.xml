@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: app.cash.turbine:turbine-iosx64:klib:0.4.1" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/app.cash.turbine/turbine-iosx64/0.4.1/2230c76fa3f61be3709d9fced439ca5e050b9da4/turbine.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/app.cash.turbine/turbine-iosx64/0.4.1/9083c6f9ce2a13d672a9e7738b7daa8f54709884/turbine-iosx64-0.4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

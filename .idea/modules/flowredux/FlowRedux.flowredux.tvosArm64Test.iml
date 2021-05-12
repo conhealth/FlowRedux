@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":flowredux:tvosArm64Test" external.linked.project.path="$MODULE_DIR$/../../../flowredux" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="com.freeletics.flowredux" external.system.module.type="sourceSet" external.system.module.version="0.5.0" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="java-gradle" name="Java-Gradle">
+      <configuration>
+        <option name="BUILD_FOLDER_PATH" value="$MODULE_DIR$/../../../flowredux/build" />
+        <option name="BUILDABLE" value="false" />
+      </configuration>
+    </facet>
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":flowredux" />
+        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" />
+        <option name="LAST_KNOWN_AGP_VERSION" />
+      </configuration>
+    </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="Native (tvos_arm64) " allPlatforms="Native []/Native [tvos_arm64]" useProjectSettings="false" isTestModule="true" externalProjectId=":flowredux" pureKotlinSourceFolders="$MODULE_DIR$/../../../flowredux/src/iosArm32Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/iosArm32Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/iosArm64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/iosArm64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/iosX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/iosX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/jvmMain/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/jvmTest/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/linuxX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/linuxX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/macosX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/macosX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/mingwX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/mingwX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/tvosArm64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/tvosArm64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/tvosX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/tvosX64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/watchosArm32Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/watchosArm32Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/watchosArm64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/watchosArm64Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/watchosX86Main/kotlin;/Users/hannes/workspace/FlowRedux/flowredux/src/watchosX86Main/kotlin">
+        <dependsOnModuleNames>:flowredux:commonTest</dependsOnModuleNames>
+        <sourceSets>
+          <sourceSet>FlowRedux.flowredux.commonTest</sourceSet>
+          <sourceSet>FlowRedux.flowredux.nativeTest</sourceSet>
+          <sourceSet>FlowRedux.flowredux.tvosArm64Main</sourceSet>
+          <sourceSet>FlowRedux.flowredux.commonMain</sourceSet>
+        </sourceSets>
+        <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
+        <compilerSettings />
+        <compilerArguments>
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="multiPlatform" value="true" />
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../../flowredux/build/classes/kotlin/tvosArm64/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../flowredux/src/tvosArm64Test" />
+    <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - stdlib" level="project" />
+    <orderEntry type="module" module-name="FlowRedux.flowredux.commonMain" scope="TEST" />
+    <orderEntry type="module" module-name="FlowRedux.flowredux.commonTest" scope="TEST" production-on-test="" />
+    <orderEntry type="module" module-name="FlowRedux.flowredux.nativeTest" scope="TEST" production-on-test="" />
+    <orderEntry type="module" module-name="FlowRedux.flowredux.tvosArm64Main" scope="TEST" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - AVFoundation [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - AVKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - Accelerate [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - Accessibility [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - AdSupport [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - AppTrackingTransparency [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - AudioToolbox [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - AuthenticationServices [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - BackgroundTasks [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CFNetwork [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CloudKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CommonCrypto [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreAudio [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreAudioTypes [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreBluetooth [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreData [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreFoundation [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreGraphics [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreHaptics [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreImage [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreLocation [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreML [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreMedia [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreServices [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreSpotlight [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreText [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CoreVideo [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - CryptoTokenKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - DeviceCheck [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - EAGL [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - ExternalAccessory [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - Foundation [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - GLKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - GameController [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - GameKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - GameplayKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - HomeKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - IOSurface [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - ImageIO [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - Intents [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - IntentsUI [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - JavaScriptCore [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - LinkPresentation [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - MLCompute [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - MapKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - MediaAccessibility [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - MediaPlayer [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - MediaToolbox [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - Metal [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - MetalKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - MetalPerformanceShaders [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - MetalPerformanceShadersGraph [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - MetricKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - MobileCoreServices [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - ModelIO [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - MultipeerConnectivity [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - NaturalLanguage [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - Network [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - OpenAL [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - OpenGLES [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - OpenGLES2 [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - OpenGLES3 [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - OpenGLESCommon [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - Photos [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - PhotosUI [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - QuartzCore [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - ReplayKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - SceneKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - Security [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - SoundAnalysis [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - SpriteKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - StoreKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - SystemConfiguration [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - TVMLKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - TVServices [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - TVUIKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - UIKit [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - UniformTypeIdentifiers [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - UserNotifications [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - VideoSubscriberAccount [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - VideoToolbox [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - Vision [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - builtin [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - darwin [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - iconv [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - objc [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - posix [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.4.32 - zlib [tvos_arm64]" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-common:1.4.32" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.4.32" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.4.32" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: app.cash.turbine:turbine-tvosarm64:klib:0.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosarm64:klib:1.4.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:atomicfu-tvosarm64:klib:0.15.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:atomicfu-tvosarm64:klib:cinterop-interop:0.15.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: app.cash.turbine:turbine:0.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.3" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="FlowRedux.flowredux.tvosArm64Main" />
+</module>
