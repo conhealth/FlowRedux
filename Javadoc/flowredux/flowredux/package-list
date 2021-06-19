@@ -4,7 +4,5 @@ $dokka.location:com.freeletics.flowredux////PointingToDeclaration/flowredux/com
 $dokka.location:com.freeletics.flowredux//reduxStore/kotlinx.coroutines.flow.Flow[TypeParam(bounds=[kotlin.Any?])]#kotlin.Function0[TypeParam(bounds=[kotlin.Any?])]#kotlin.collections.Iterable[kotlin.Function2[kotlinx.coroutines.flow.Flow[TypeParam(bounds=[kotlin.Any?])],kotlin.Function0[TypeParam(bounds=[kotlin.Any?])],kotlinx.coroutines.flow.Flow[TypeParam(bounds=[kotlin.Any?])]]]#com.freeletics.flowredux.FlowReduxLogger?#kotlin.Function2[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/flowredux/com.freeletics.flowredux/redux-store.md
 $dokka.location:com.freeletics.flowredux/FlowReduxLogger///PointingToDeclaration/flowredux/com.freeletics.flowredux/-flow-redux-logger/index.md
 $dokka.location:com.freeletics.flowredux/FlowReduxLogger/log/#kotlin.String/PointingToDeclaration/flowredux/com.freeletics.flowredux/-flow-redux-logger/log.md
-$dokka.location:com.freeletics.flowredux/ReducerException///PointingToDeclaration/flowredux/com.freeletics.flowredux/-reducer-exception/index.md
-$dokka.location:com.freeletics.flowredux/ReducerException/ReducerException/#kotlin.Any#kotlin.Any#kotlin.Throwable/PointingToDeclaration/flowredux/com.freeletics.flowredux/-reducer-exception/-reducer-exception.md
 com.freeletics.flowredux
 

@@ -9,13 +9,14 @@
         <meta name="description" content="Kotlin Multiplatform library to create state machines">
       
       
-        <link rel="canonical" href="https://freeletics.github.io/FlowRedux/dsl/">
-      
       
         <meta name="author" content="Freeletics">
       
-      <link rel="shortcut icon" href="../images/icon-freeletics.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.1">
+      
+        <link rel="canonical" href="https://freeletics.github.io/FlowRedux/dsl/">
+      
+      <link rel="icon" href="../images/icon-freeletics.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.8">
     
     
       
@@ -23,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ca7ac06f.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
         
           
           
@@ -38,9 +39,9 @@
     
       
         
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
       
     
     
@@ -49,6 +50,8 @@
     
     
       
+
+
     
     
   </head>
@@ -60,8 +63,10 @@
     
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="white">
-      
   
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -78,45 +83,49 @@
     </div>
     
       <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://freeletics.github.io/FlowRedux/" title="FlowRedux" class="md-header-nav__button md-logo" aria-label="FlowRedux">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="FlowRedux" class="md-header__button md-logo" aria-label="FlowRedux" data-md-component="logo">
       
   <img src="../images/icon-freeletics.png" alt="logo">
 
     </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      
-        <div class="md-header-nav__ellipsis">
-          <span class="md-header-nav__topic md-ellipsis">
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
             FlowRedux
           </span>
-          <span class="md-header-nav__topic md-ellipsis">
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
             
               DSL Guide
             
           </span>
         </div>
-      
+      </div>
     </div>
     
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
       
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
       </button>
     </form>
     <div class="md-search__output">
@@ -133,12 +142,12 @@
 </div>
     
     
-      <div class="md-header-nav__source">
+      <div class="md-header__source">
         
-<a href="https://github.com/freeletics/FlowRedux/" title="Go to repository" class="md-source">
+<a href="https://github.com/freeletics/FlowRedux/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     FlowRedux
@@ -158,12 +167,16 @@
         <div class="md-main__inner md-grid">
           
             
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://freeletics.github.io/FlowRedux/" title="FlowRedux" class="md-nav__button md-logo" aria-label="FlowRedux">
+    <a href=".." title="FlowRedux" class="md-nav__button md-logo" aria-label="FlowRedux" data-md-component="logo">
       
   <img src="../images/icon-freeletics.png" alt="logo">
 
@@ -173,10 +186,10 @@
   
     <div class="md-nav__source">
       
-<a href="https://github.com/freeletics/FlowRedux/" title="Go to repository" class="md-source">
+<a href="https://github.com/freeletics/FlowRedux/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     FlowRedux
@@ -190,24 +203,15 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href=".." title="FlowRedux" class="md-nav__link">
-      FlowRedux
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../contributing/" title="Contributing" class="md-nav__link">
-      Contributing
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        FlowRedux
+      </a>
+    </li>
+  
 
     
       
@@ -215,26 +219,45 @@
       
 
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        Contributing
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
       
+      
+      
+
+  
+  
     
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          DSL Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         DSL Guide
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" title="DSL Guide" class="md-nav__link md-nav__link--active">
-      DSL Guide
-    </a>
-    
+      </a>
       
+        
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -244,7 +267,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#initial-state" class="md-nav__link">
@@ -365,1256 +388,1239 @@
     </ul>
   
 </nav>
-    
-  </li>
+      
+    </li>
+  
 
     
       
       
       
 
-
-  <li class="md-nav__item">
-    <a href="../flow_vs_FlowReduxStateMachine/" title="FlowReduxStateMachine vs .reduxStore()" class="md-nav__link">
-      FlowReduxStateMachine vs .reduxStore()
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../multiplatform/" title="Multiplatform" class="md-nav__link">
-      Multiplatform
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flow_vs_FlowReduxStateMachine/" class="md-nav__link">
+        FlowReduxStateMachine vs .reduxStore()
+      </a>
+    </li>
+  
 
     
       
       
       
 
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiplatform/" class="md-nav__link">
+        Multiplatform
+      </a>
+    </li>
+  
 
-  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      
+      
+      
+
+  
+  
+  
     
-    <label class="md-nav__link" for="nav-6">
-      Javadoc
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Javadoc" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        <span class="md-nav__icon md-icon"></span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
         Javadoc
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1">
-    
-    <label class="md-nav__link" for="nav-6-1">
-      Dsl
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Dsl" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-1">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Javadoc" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Javadoc
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1" type="checkbox" id="__nav_6_1" >
+      
+      <label class="md-nav__link" for="__nav_6_1">
         Dsl
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2" type="checkbox" id="nav-6-1-2">
-    
-    <label class="md-nav__link" for="nav-6-1-2">
-      Dsl
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Dsl" data-md-level="3">
-      <label class="md-nav__title" for="nav-6-1-2">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Dsl" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_1">
+          <span class="md-nav__icon md-icon"></span>
+          Dsl
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2" type="checkbox" id="__nav_6_1_2" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2">
         Dsl
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2-1" type="checkbox" id="nav-6-1-2-1">
-    
-    <label class="md-nav__link" for="nav-6-1-2-1">
-      Com.freeletics.flowredux.dsl
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Com.freeletics.flowredux.dsl" data-md-level="4">
-      <label class="md-nav__title" for="nav-6-1-2-1">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Dsl" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          Dsl
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_1" type="checkbox" id="__nav_6_1_2_1" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2_1">
         Com.freeletics.flowredux.dsl
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/reduce/" title="Reduce" class="md-nav__link">
-      Reduce
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/redux-store/" title="Redux store" class="md-nav__link">
-      Redux store
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2-1-4" type="checkbox" id="nav-6-1-2-1-4">
-    
-    <label class="md-nav__link" for="nav-6-1-2-1-4">
-       change state
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" change state" data-md-level="5">
-      <label class="md-nav__title" for="nav-6-1-2-1-4">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Com.freeletics.flowredux.dsl" data-md-level="4">
+        <label class="md-nav__title" for="__nav_6_1_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Com.freeletics.flowredux.dsl
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/reduce/" class="md-nav__link">
+        Reduce
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/redux-store/" class="md-nav__link">
+        Redux store
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_1_4" type="checkbox" id="__nav_6_1_2_1_4" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2_1_4">
          change state
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-change-state/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2-1-5" type="checkbox" id="nav-6-1-2-1-5">
-    
-    <label class="md-nav__link" for="nav-6-1-2-1-5">
-       flat map policy
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" flat map policy" data-md-level="5">
-      <label class="md-nav__title" for="nav-6-1-2-1-5">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label=" change state" data-md-level="5">
+        <label class="md-nav__title" for="__nav_6_1_2_1_4">
+          <span class="md-nav__icon md-icon"></span>
+           change state
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-change-state/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_1_5" type="checkbox" id="__nav_6_1_2_1_5" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2_1_5">
          flat map policy
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2-1-5-2" type="checkbox" id="nav-6-1-2-1-5-2">
-    
-    <label class="md-nav__link" for="nav-6-1-2-1-5-2">
-       c o n c a t
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" c o n c a t" data-md-level="6">
-      <label class="md-nav__title" for="nav-6-1-2-1-5-2">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label=" flat map policy" data-md-level="5">
+        <label class="md-nav__title" for="__nav_6_1_2_1_5">
+          <span class="md-nav__icon md-icon"></span>
+           flat map policy
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_1_5_2" type="checkbox" id="__nav_6_1_2_1_5_2" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2_1_5_2">
          c o n c a t
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-c-o-n-c-a-t/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-c-o-n-c-a-t/name/" title="Name" class="md-nav__link">
-      Name
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-c-o-n-c-a-t/ordinal/" title="Ordinal" class="md-nav__link">
-      Ordinal
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2-1-5-3" type="checkbox" id="nav-6-1-2-1-5-3">
-    
-    <label class="md-nav__link" for="nav-6-1-2-1-5-3">
-       l a t e s t
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" l a t e s t" data-md-level="6">
-      <label class="md-nav__title" for="nav-6-1-2-1-5-3">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label=" c o n c a t" data-md-level="6">
+        <label class="md-nav__title" for="__nav_6_1_2_1_5_2">
+          <span class="md-nav__icon md-icon"></span>
+           c o n c a t
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-c-o-n-c-a-t/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-c-o-n-c-a-t/name/" class="md-nav__link">
+        Name
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-c-o-n-c-a-t/ordinal/" class="md-nav__link">
+        Ordinal
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_1_5_3" type="checkbox" id="__nav_6_1_2_1_5_3" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2_1_5_3">
          l a t e s t
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-l-a-t-e-s-t/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-l-a-t-e-s-t/name/" title="Name" class="md-nav__link">
-      Name
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-l-a-t-e-s-t/ordinal/" title="Ordinal" class="md-nav__link">
-      Ordinal
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2-1-5-4" type="checkbox" id="nav-6-1-2-1-5-4">
-    
-    <label class="md-nav__link" for="nav-6-1-2-1-5-4">
-       m e r g e
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" m e r g e" data-md-level="6">
-      <label class="md-nav__title" for="nav-6-1-2-1-5-4">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label=" l a t e s t" data-md-level="6">
+        <label class="md-nav__title" for="__nav_6_1_2_1_5_3">
+          <span class="md-nav__icon md-icon"></span>
+           l a t e s t
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-l-a-t-e-s-t/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-l-a-t-e-s-t/name/" class="md-nav__link">
+        Name
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-l-a-t-e-s-t/ordinal/" class="md-nav__link">
+        Ordinal
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_1_5_4" type="checkbox" id="__nav_6_1_2_1_5_4" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2_1_5_4">
          m e r g e
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-m-e-r-g-e/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-m-e-r-g-e/name/" title="Name" class="md-nav__link">
-      Name
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-m-e-r-g-e/ordinal/" title="Ordinal" class="md-nav__link">
-      Ordinal
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2-1-6" type="checkbox" id="nav-6-1-2-1-6">
-    
-    <label class="md-nav__link" for="nav-6-1-2-1-6">
-       flow redux state machine
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" flow redux state machine" data-md-level="5">
-      <label class="md-nav__title" for="nav-6-1-2-1-6">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label=" m e r g e" data-md-level="6">
+        <label class="md-nav__title" for="__nav_6_1_2_1_5_4">
+          <span class="md-nav__icon md-icon"></span>
+           m e r g e
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-m-e-r-g-e/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-m-e-r-g-e/name/" class="md-nav__link">
+        Name
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-m-e-r-g-e/ordinal/" class="md-nav__link">
+        Ordinal
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_1_6" type="checkbox" id="__nav_6_1_2_1_6" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2_1_6">
          flow redux state machine
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/-flow-redux-state-machine/" title="flow redux state machine" class="md-nav__link">
-       flow redux state machine
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/dispatch/" title="Dispatch" class="md-nav__link">
-      Dispatch
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/state/" title="State" class="md-nav__link">
-      State
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2-1-7" type="checkbox" id="nav-6-1-2-1-7">
-    
-    <label class="md-nav__link" for="nav-6-1-2-1-7">
-       flow redux store builder
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" flow redux store builder" data-md-level="5">
-      <label class="md-nav__title" for="nav-6-1-2-1-7">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label=" flow redux state machine" data-md-level="5">
+        <label class="md-nav__title" for="__nav_6_1_2_1_6">
+          <span class="md-nav__icon md-icon"></span>
+           flow redux state machine
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/-flow-redux-state-machine/" class="md-nav__link">
+         flow redux state machine
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/dispatch/" class="md-nav__link">
+        Dispatch
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/state/" class="md-nav__link">
+        State
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_1_7" type="checkbox" id="__nav_6_1_2_1_7" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2_1_7">
          flow redux store builder
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/-flow-redux-store-builder/" title="flow redux store builder" class="md-nav__link">
-       flow redux store builder
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/builder-blocks/" title="Builder blocks" class="md-nav__link">
-      Builder blocks
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/collect-while-in-any-state/" title="Collect while in any state" class="md-nav__link">
-      Collect while in any state
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/in-state-with-condition/" title="In state with condition" class="md-nav__link">
-      In state with condition
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/in-state/" title="In state" class="md-nav__link">
-      In state
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2-1-8" type="checkbox" id="nav-6-1-2-1-8">
-    
-    <label class="md-nav__link" for="nav-6-1-2-1-8">
-       in state builder block
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" in state builder block" data-md-level="5">
-      <label class="md-nav__title" for="nav-6-1-2-1-8">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label=" flow redux store builder" data-md-level="5">
+        <label class="md-nav__title" for="__nav_6_1_2_1_7">
+          <span class="md-nav__icon md-icon"></span>
+           flow redux store builder
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/-flow-redux-store-builder/" class="md-nav__link">
+         flow redux store builder
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/builder-blocks/" class="md-nav__link">
+        Builder blocks
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/collect-while-in-any-state/" class="md-nav__link">
+        Collect while in any state
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/in-state-with-condition/" class="md-nav__link">
+        In state with condition
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/in-state/" class="md-nav__link">
+        In state
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_1_8" type="checkbox" id="__nav_6_1_2_1_8" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2_1_8">
          in state builder block
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/-in-state-builder-block/" title="in state builder block" class="md-nav__link">
-       in state builder block
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/_in-state-side-effect-builders/" title="in state side effect builders" class="md-nav__link">
-       in state side effect builders
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/_is-in-state/" title="is in state" class="md-nav__link">
-       is in state
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/collect-while-in-state/" title="Collect while in state" class="md-nav__link">
-      Collect while in state
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/on-enter/" title="On enter" class="md-nav__link">
-      On enter
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/on/" title="On" class="md-nav__link">
-      On
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2-1-9" type="checkbox" id="nav-6-1-2-1-9">
-    
-    <label class="md-nav__link" for="nav-6-1-2-1-9">
-       in state side effect builder
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" in state side effect builder" data-md-level="5">
-      <label class="md-nav__title" for="nav-6-1-2-1-9">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label=" in state builder block" data-md-level="5">
+        <label class="md-nav__title" for="__nav_6_1_2_1_8">
+          <span class="md-nav__icon md-icon"></span>
+           in state builder block
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/-in-state-builder-block/" class="md-nav__link">
+         in state builder block
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/_in-state-side-effect-builders/" class="md-nav__link">
+         in state side effect builders
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/_is-in-state/" class="md-nav__link">
+         is in state
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/collect-while-in-state/" class="md-nav__link">
+        Collect while in state
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/on-enter/" class="md-nav__link">
+        On enter
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/on/" class="md-nav__link">
+        On
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_1_9" type="checkbox" id="__nav_6_1_2_1_9" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2_1_9">
          in state side effect builder
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-side-effect-builder/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2-1-10" type="checkbox" id="nav-6-1-2-1-10">
-    
-    <label class="md-nav__link" for="nav-6-1-2-1-10">
-       mutate state
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" mutate state" data-md-level="5">
-      <label class="md-nav__title" for="nav-6-1-2-1-10">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label=" in state side effect builder" data-md-level="5">
+        <label class="md-nav__title" for="__nav_6_1_2_1_9">
+          <span class="md-nav__icon md-icon"></span>
+           in state side effect builder
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-side-effect-builder/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_1_10" type="checkbox" id="__nav_6_1_2_1_10" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2_1_10">
          mutate state
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-mutate-state/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-mutate-state/-mutate-state/" title="mutate state" class="md-nav__link">
-       mutate state
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2-1-11" type="checkbox" id="nav-6-1-2-1-11">
-    
-    <label class="md-nav__link" for="nav-6-1-2-1-11">
-       no state change
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" no state change" data-md-level="5">
-      <label class="md-nav__title" for="nav-6-1-2-1-11">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label=" mutate state" data-md-level="5">
+        <label class="md-nav__title" for="__nav_6_1_2_1_10">
+          <span class="md-nav__icon md-icon"></span>
+           mutate state
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-mutate-state/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-mutate-state/-mutate-state/" class="md-nav__link">
+         mutate state
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_1_11" type="checkbox" id="__nav_6_1_2_1_11" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2_1_11">
          no state change
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-no-state-change/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2-1-12" type="checkbox" id="nav-6-1-2-1-12">
-    
-    <label class="md-nav__link" for="nav-6-1-2-1-12">
-       on action in state side effect builder
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" on action in state side effect builder" data-md-level="5">
-      <label class="md-nav__title" for="nav-6-1-2-1-12">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label=" no state change" data-md-level="5">
+        <label class="md-nav__title" for="__nav_6_1_2_1_11">
+          <span class="md-nav__icon md-icon"></span>
+           no state change
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-no-state-change/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_1_12" type="checkbox" id="__nav_6_1_2_1_12" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2_1_12">
          on action in state side effect builder
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-action-in-state-side-effect-builder/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-action-in-state-side-effect-builder/-on-action-in-state-side-effect-builder/" title="on action in state side effect builder" class="md-nav__link">
-       on action in state side effect builder
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2-1-13" type="checkbox" id="nav-6-1-2-1-13">
-    
-    <label class="md-nav__link" for="nav-6-1-2-1-13">
-       on enter in state side effect builder
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" on enter in state side effect builder" data-md-level="5">
-      <label class="md-nav__title" for="nav-6-1-2-1-13">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label=" on action in state side effect builder" data-md-level="5">
+        <label class="md-nav__title" for="__nav_6_1_2_1_12">
+          <span class="md-nav__icon md-icon"></span>
+           on action in state side effect builder
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-action-in-state-side-effect-builder/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-action-in-state-side-effect-builder/-on-action-in-state-side-effect-builder/" class="md-nav__link">
+         on action in state side effect builder
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_1_13" type="checkbox" id="__nav_6_1_2_1_13" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2_1_13">
          on enter in state side effect builder
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-enter-in-state-side-effect-builder/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-enter-in-state-side-effect-builder/-on-enter-in-state-side-effect-builder/" title="on enter in state side effect builder" class="md-nav__link">
-       on enter in state side effect builder
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2-1-14" type="checkbox" id="nav-6-1-2-1-14">
-    
-    <label class="md-nav__link" for="nav-6-1-2-1-14">
-       override state
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" override state" data-md-level="5">
-      <label class="md-nav__title" for="nav-6-1-2-1-14">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label=" on enter in state side effect builder" data-md-level="5">
+        <label class="md-nav__title" for="__nav_6_1_2_1_13">
+          <span class="md-nav__icon md-icon"></span>
+           on enter in state side effect builder
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-enter-in-state-side-effect-builder/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-enter-in-state-side-effect-builder/-on-enter-in-state-side-effect-builder/" class="md-nav__link">
+         on enter in state side effect builder
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_1_14" type="checkbox" id="__nav_6_1_2_1_14" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2_1_14">
          override state
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-override-state/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-override-state/-override-state/" title="override state" class="md-nav__link">
-       override state
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1-2-1-15" type="checkbox" id="nav-6-1-2-1-15">
-    
-    <label class="md-nav__link" for="nav-6-1-2-1-15">
-       store wide builder block
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" store wide builder block" data-md-level="5">
-      <label class="md-nav__title" for="nav-6-1-2-1-15">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label=" override state" data-md-level="5">
+        <label class="md-nav__title" for="__nav_6_1_2_1_14">
+          <span class="md-nav__icon md-icon"></span>
+           override state
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-override-state/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-override-state/-override-state/" class="md-nav__link">
+         override state
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_1_15" type="checkbox" id="__nav_6_1_2_1_15" >
+      
+      <label class="md-nav__link" for="__nav_6_1_2_1_15">
          store wide builder block
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-store-wide-builder-block/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-2" type="checkbox" id="nav-6-2">
-    
-    <label class="md-nav__link" for="nav-6-2">
-      Flowredux
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Flowredux" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-2">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label=" store wide builder block" data-md-level="5">
+        <label class="md-nav__title" for="__nav_6_1_2_1_15">
+          <span class="md-nav__icon md-icon"></span>
+           store wide builder block
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-store-wide-builder-block/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+      
+      <label class="md-nav__link" for="__nav_6_2">
         Flowredux
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/flowredux/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-2-2" type="checkbox" id="nav-6-2-2">
-    
-    <label class="md-nav__link" for="nav-6-2-2">
-      Flowredux
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Flowredux" data-md-level="3">
-      <label class="md-nav__title" for="nav-6-2-2">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Flowredux" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Flowredux
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/flowredux/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2_2" type="checkbox" id="__nav_6_2_2" >
+      
+      <label class="md-nav__link" for="__nav_6_2_2">
         Flowredux
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-2-2-1" type="checkbox" id="nav-6-2-2-1">
-    
-    <label class="md-nav__link" for="nav-6-2-2-1">
-      Com.freeletics.flowredux
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Com.freeletics.flowredux" data-md-level="4">
-      <label class="md-nav__title" for="nav-6-2-2-1">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Flowredux" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Flowredux
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2_2_1" type="checkbox" id="__nav_6_2_2_1" >
+      
+      <label class="md-nav__link" for="__nav_6_2_2_1">
         Com.freeletics.flowredux
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/flowredux/flowredux/com.freeletics.flowredux/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/flowredux/flowredux/com.freeletics.flowredux/redux-store/" title="Redux store" class="md-nav__link">
-      Redux store
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-2-2-1-3" type="checkbox" id="nav-6-2-2-1-3">
-    
-    <label class="md-nav__link" for="nav-6-2-2-1-3">
-       flow redux logger
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" flow redux logger" data-md-level="5">
-      <label class="md-nav__title" for="nav-6-2-2-1-3">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Com.freeletics.flowredux" data-md-level="4">
+        <label class="md-nav__title" for="__nav_6_2_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Com.freeletics.flowredux
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/flowredux/flowredux/com.freeletics.flowredux/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/flowredux/flowredux/com.freeletics.flowredux/redux-store/" class="md-nav__link">
+        Redux store
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2_2_1_3" type="checkbox" id="__nav_6_2_2_1_3" >
+      
+      <label class="md-nav__link" for="__nav_6_2_2_1_3">
          flow redux logger
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/flowredux/flowredux/com.freeletics.flowredux/-flow-redux-logger/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/flowredux/flowredux/com.freeletics.flowredux/-flow-redux-logger/log/" title="Log" class="md-nav__link">
-      Log
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-2-2-1-4" type="checkbox" id="nav-6-2-2-1-4">
-    
-    <label class="md-nav__link" for="nav-6-2-2-1-4">
-       reducer exception
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label=" reducer exception" data-md-level="5">
-      <label class="md-nav__title" for="nav-6-2-2-1-4">
         <span class="md-nav__icon md-icon"></span>
-         reducer exception
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label=" flow redux logger" data-md-level="5">
+        <label class="md-nav__title" for="__nav_6_2_2_1_3">
+          <span class="md-nav__icon md-icon"></span>
+           flow redux logger
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/flowredux/flowredux/com.freeletics.flowredux/-flow-redux-logger/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/flowredux/flowredux/com.freeletics.flowredux/-flow-redux-logger/log/" class="md-nav__link">
+        Log
+      </a>
+    </li>
+  
+
           
+        </ul>
+      </nav>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/flowredux/flowredux/com.freeletics.flowredux/-reducer-exception/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
           
+        </ul>
+      </nav>
+    </li>
+  
+
           
+        </ul>
+      </nav>
+    </li>
+  
+
           
+        </ul>
+      </nav>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Javadoc/flowredux/flowredux/com.freeletics.flowredux/-reducer-exception/-reducer-exception/" title="reducer exception" class="md-nav__link">
-       reducer exception
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+          
+        </ul>
+      </nav>
+    </li>
+  
 
     
   </ul>
@@ -1624,11 +1630,13 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -1638,7 +1646,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#initial-state" class="md-nav__link">
@@ -1764,7 +1772,7 @@
               </div>
             
           
-          <div class="md-content">
+          <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
@@ -1781,34 +1789,32 @@ and more concepts of the DSL will be introduced we will extend this sample.</p>
 web service and display that list. While loading the list we show a loading indicator on the screen and if an error
 occurs we show an error message on the screen with a retry button.</p>
 <p>This gives us the following states:</p>
-<div class="highlight"><pre><span></span><code><span class="k">sealed</span> <span class="k">class</span> <span class="nc">State</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">sealed</span> <span class="kd">class</span> <span class="nc">State</span> <span class="p">{</span>
 
     <span class="c1">// Shows a loading indicator on screen</span>
-    <span class="k">object</span> <span class="nc">LoadingState</span> <span class="p">:</span> <span class="n">State</span><span class="p">()</span>
+    <span class="kd">object</span> <span class="nc">LoadingState</span> <span class="p">:</span> <span class="n">State</span><span class="p">()</span>
 
     <span class="c1">// List of items loaded successfully, show it on screen</span>
-    <span class="k">data</span> <span class="k">class</span> <span class="nc">ShowContentState</span><span class="p">(</span><span class="k">val</span> <span class="py">items</span><span class="p">:</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Item</span><span class="p">&gt;)</span> <span class="p">:</span> <span class="n">State</span><span class="p">()</span>
+    <span class="kd">data</span> <span class="kd">class</span> <span class="nc">ShowContentState</span><span class="p">(</span><span class="kd">val</span> <span class="nv">items</span><span class="p">:</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Item</span><span class="o">&gt;</span><span class="p">)</span> <span class="p">:</span> <span class="n">State</span><span class="p">()</span>
 
     <span class="c1">// Error while loading happened</span>
-    <span class="k">data</span> <span class="k">class</span> <span class="nc">ErrorState</span><span class="p">(</span><span class="k">val</span> <span class="py">cause</span><span class="p">:</span> <span class="n">Throwable</span><span class="p">)</span> <span class="p">:</span> <span class="n">State</span><span class="p">()</span>
+    <span class="kd">data</span> <span class="kd">class</span> <span class="nc">ErrorState</span><span class="p">(</span><span class="kd">val</span> <span class="nv">cause</span><span class="p">:</span> <span class="n">Throwable</span><span class="p">)</span> <span class="p">:</span> <span class="n">State</span><span class="p">()</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>If we reached <code>ErrorState</code> we display an error message but also a button a user can click to retry loading the items.
 This gives us the following <code>Actions</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="k">sealed</span> <span class="k">class</span> <span class="nc">Action</span> <span class="p">{</span>
-    <span class="k">object</span> <span class="nc">RetryLoadingAction</span> <span class="p">:</span> <span class="n">Action</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kd">sealed</span> <span class="kd">class</span> <span class="nc">Action</span> <span class="p">{</span>
+    <span class="kd">object</span> <span class="nc">RetryLoadingAction</span> <span class="p">:</span> <span class="n">Action</span><span class="p">()</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="initial-state">Initial State<a class="headerlink" href="#initial-state" title="Permanent link">&para;</a></h2>
 <p>Every <code>FlowReduxStateMachine</code> needs an initial state. This is in which state the state machine starts. In our example we
 start with the <code>LoadingState</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
-    <span class="k">private</span> <span class="k">val</span> <span class="py">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
-<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="p">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="p">&gt;(</span><span class="n">initialState</span> <span class="p">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
+    <span class="kd">private</span> <span class="kd">val</span> <span class="nv">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
+<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="o">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="o">&gt;</span><span class="p">(</span><span class="n">initialState</span> <span class="o">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
 
-    <span class="n">init</span> <span class="p">{</span>
+    <span class="k">init</span> <span class="p">{</span>
         <span class="n">spec</span> <span class="p">{</span>
             <span class="c1">// will be filled in next section</span>
             <span class="p">...</span>
@@ -1816,7 +1822,6 @@ start with the <code>LoadingState</code>.</p>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>Please note the constructor parameter of <code>FlowReduxStateMachine(initialState = ...)</code>. This is how you define the initial
 state of your state machine. Next, we already see that we need an <code>init {...}</code> block containing a <code>spec { ... }</code> block
 inside. The <code>spec { ... }</code> block is actually where we write our DSL inside.</p>
@@ -1824,12 +1829,11 @@ inside. The <code>spec { ... }</code> block is actually where we write our DSL i
 <p>One key concept of the FlowRedux DSL is that the return type of every function such as <code>onEnter</code>, <code>onAction</code>
 and <code>collectWhileInState</code>
 (we will learn about them later) is of type <code>ChangeState&lt;State&gt;</code>. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="n">suspend</span> <span class="k">fun</span> <span class="nf">handleLoadingAction</span><span class="p">(</span><span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">State</span><span class="p">):</span> <span class="n">ChangeState</span><span class="p">&lt;</span><span class="n">State</span><span class="p">&gt;</span> <span class="p">{</span>
-    <span class="k">val</span> <span class="py">items</span> <span class="p">=</span> <span class="n">loadItems</span><span class="p">()</span> <span class="c1">// suspend function</span>
+<div class="highlight"><pre><span></span><code><span class="kd">suspend</span> <span class="kd">fun</span> <span class="nf">handleLoadingAction</span><span class="p">(</span><span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">State</span><span class="p">):</span> <span class="n">ChangeState</span><span class="o">&lt;</span><span class="n">State</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="nv">items</span> <span class="o">=</span> <span class="n">loadItems</span><span class="p">()</span> <span class="c1">// suspend function</span>
     <span class="k">return</span> <span class="n">OverrideState</span><span class="p">(</span><span class="n">ShowContentState</span><span class="p">(</span><span class="n">items</span><span class="p">))</span> <span class="c1">// OverrideState extends from ChangeState. We will talk about it in 1 minutes.</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>As the name suggests <code>ChangeState&lt;State&gt;</code> is the way to tell the Redux store what the next state is or how to &ldquo;compute&rdquo;
 the next state(often also called reduce state).
 <code>ChangeState</code> is a sealed class. You never use <code>ChangeState</code> directly but only one of the subtypes. There are 3 subtypes
@@ -1846,12 +1850,11 @@ parameter. By using <code>OverrideState</code> you basically say &ldquo;I don&rs
 whatever I give you&rdquo;. This is used if computing the next state is independent of current state. You literally override
 the state regardless of what the current state is.</p>
 <p>Usage:</p>
-<div class="highlight"><pre><span></span><code><span class="n">suspend</span> <span class="k">fun</span> <span class="nf">handleFooAction</span><span class="p">(</span><span class="n">action</span><span class="p">:</span> <span class="n">Action</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">State</span><span class="p">):</span> <span class="n">ChangeState</span><span class="p">&lt;</span><span class="n">State</span><span class="p">&gt;</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">suspend</span> <span class="kd">fun</span> <span class="nf">handleFooAction</span><span class="p">(</span><span class="n">action</span><span class="p">:</span> <span class="n">Action</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">State</span><span class="p">):</span> <span class="n">ChangeState</span><span class="o">&lt;</span><span class="n">State</span><span class="o">&gt;</span> <span class="p">{</span>
     <span class="p">...</span>
     <span class="k">return</span> <span class="n">OverrideState</span><span class="p">(</span><span class="n">SomeOtherState</span><span class="p">())</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h3 id="mutatestatesubstate-state-reducer-currentstate-substate-state"><code>MutateState&lt;SubState, State&gt;( reducer: (currentState : SubState) -&gt; State )</code><a class="headerlink" href="#mutatestatesubstate-state-reducer-currentstate-substate-state" title="Permanent link">&para;</a></h3>
 <p><code>MutateState&lt;SubState, State&gt;( reducer: (currentState : SubState) -&gt; State )</code> is used if your next state computation is
 based on the current state. Thus, <code>MutateState</code> expects a lambda block with signature <code>(State) -&gt; State</code>. This is a
@@ -1859,24 +1862,23 @@ so-called reducer function to compute the next state. You may wonder why <code>M
 constructor parameter and not a new state instance as <code>OverrideState</code> does? The reason is that FlowRedux is an
 asynchronous state machine meaning multiple coroutines can run in parallel and mutate state. Here is a very simple
 example (we will discuss the exact details of the used DSL later in this documentat):</p>
-<div class="highlight"><pre><span></span><code><span class="n">suspend</span> <span class="k">fun</span> <span class="nf">createRandomItem</span><span class="p">():</span> <span class="n">Item</span> <span class="p">{</span>
-    <span class="k">val</span> <span class="py">random</span> <span class="p">=</span> <span class="p">(</span><span class="m">0.</span><span class="p">.</span><span class="m">10</span><span class="p">).</span><span class="n">random</span><span class="p">()</span>
-    <span class="n">delay</span><span class="p">(</span><span class="n">random</span> <span class="p">*</span> <span class="m">1000</span><span class="p">)</span> <span class="c1">// randomly wait for up to 10 seconds</span>
-    <span class="k">return</span> <span class="n">Item</span><span class="p">(</span><span class="s">&quot;random $random&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">suspend</span> <span class="kd">fun</span> <span class="nf">createRandomItem</span><span class="p">():</span> <span class="n">Item</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="nv">random</span> <span class="o">=</span> <span class="p">(</span><span class="m">0.</span><span class="p">.</span><span class="m">10</span><span class="p">).</span><span class="na">random</span><span class="p">()</span>
+    <span class="n">delay</span><span class="p">(</span><span class="n">random</span> <span class="o">*</span> <span class="m">1000</span><span class="p">)</span> <span class="c1">// randomly wait for up to 10 seconds</span>
+    <span class="k">return</span> <span class="n">Item</span><span class="p">(</span><span class="s">&quot;random </span><span class="si">$</span><span class="n">random</span><span class="s">&quot;</span><span class="p">)</span>
 <span class="p">}</span>
 
 <span class="p">...</span>
 <span class="c1">// DSL specs</span>
 <span class="n">spec</span> <span class="p">{</span>
-    <span class="n">inState</span><span class="p">&lt;</span><span class="n">ShowContent</span><span class="p">&gt;</span> <span class="p">{</span>
-        <span class="n">on</span><span class="p">&lt;</span><span class="n">AddItemAction</span><span class="p">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">:</span> <span class="n">AddItemAction</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="n">ShowContent</span> <span class="p">-&gt;</span>
-            <span class="k">val</span> <span class="py">item</span><span class="p">:</span> <span class="n">Item</span> <span class="p">=</span> <span class="n">createRandomItem</span><span class="p">()</span>
-            <span class="n">MutateState</span> <span class="p">{</span> <span class="n">currentState</span><span class="p">:</span> <span class="n">ShowContent</span> <span class="p">-&gt;</span> <span class="n">currentState</span><span class="p">.</span><span class="n">copy</span><span class="p">(</span><span class="n">items</span> <span class="p">=</span> <span class="n">currentState</span><span class="p">.</span><span class="n">items</span> <span class="p">+</span> <span class="n">item</span><span class="p">)</span> <span class="p">}</span>
+    <span class="n">inState</span><span class="o">&lt;</span><span class="n">ShowContent</span><span class="o">&gt;</span> <span class="p">{</span>
+        <span class="n">on</span><span class="o">&lt;</span><span class="n">AddItemAction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">:</span> <span class="n">AddItemAction</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="n">ShowContent</span> <span class="o">-&gt;</span>
+            <span class="kd">val</span> <span class="nv">item</span><span class="p">:</span> <span class="n">Item</span> <span class="o">=</span> <span class="n">createRandomItem</span><span class="p">()</span>
+            <span class="n">MutateState</span> <span class="p">{</span> <span class="n">currentState</span><span class="p">:</span> <span class="n">ShowContent</span> <span class="o">-&gt;</span> <span class="n">currentState</span><span class="p">.</span><span class="na">copy</span><span class="p">(</span><span class="n">items</span> <span class="o">=</span> <span class="n">currentState</span><span class="p">.</span><span class="na">items</span> <span class="o">+</span> <span class="n">item</span><span class="p">)</span> <span class="p">}</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>As you see <code>createRandomItem()</code> can take some time to return a value. Furthermore, every invocation
 of <code>createRandomItem()</code> could take differently long to return a value. Let&rsquo;s take a look at the following scenario:
 current state of our FlowRedux state machine is <code>ShowContent(items = listof( Item("1"), Item("2")))</code>. Next we
@@ -1889,16 +1891,15 @@ what we get by using <code>MutateState</code>. If we use <code>OverrideState</co
 parameter then the code as follows:</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// DSL specs</span>
 <span class="n">spec</span> <span class="p">{</span>
-    <span class="n">inState</span><span class="p">&lt;</span><span class="n">ShowContent</span><span class="p">&gt;</span> <span class="p">{</span>
-        <span class="n">on</span><span class="p">&lt;</span><span class="n">AddItemAction</span><span class="p">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">:</span> <span class="n">AddItemAction</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="n">ShowContent</span> <span class="p">-&gt;</span>
-            <span class="k">val</span> <span class="py">item</span><span class="p">:</span> <span class="n">Item</span> <span class="p">=</span> <span class="n">createRandomItem</span><span class="p">()</span>
+    <span class="n">inState</span><span class="o">&lt;</span><span class="n">ShowContent</span><span class="o">&gt;</span> <span class="p">{</span>
+        <span class="n">on</span><span class="o">&lt;</span><span class="n">AddItemAction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">:</span> <span class="n">AddItemAction</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="n">ShowContent</span> <span class="o">-&gt;</span>
+            <span class="kd">val</span> <span class="nv">item</span><span class="p">:</span> <span class="n">Item</span> <span class="o">=</span> <span class="n">createRandomItem</span><span class="p">()</span>
             <span class="c1">// WRONG: don&#39;t do that. This is just to demo an issue (see explanation bellow).</span>
-            <span class="n">OverrideState</span><span class="p">(</span><span class="n">state</span><span class="p">.</span><span class="n">copy</span><span class="p">(</span><span class="n">items</span> <span class="p">=</span> <span class="n">currentState</span><span class="p">.</span><span class="n">items</span> <span class="p">+</span> <span class="n">item</span><span class="p">))</span> <span class="c1">// or MutateState( state.copy(items = currentState.items + item) )</span>
+            <span class="n">OverrideState</span><span class="p">(</span><span class="n">state</span><span class="p">.</span><span class="na">copy</span><span class="p">(</span><span class="n">items</span> <span class="o">=</span> <span class="n">currentState</span><span class="p">.</span><span class="na">items</span> <span class="o">+</span> <span class="n">item</span><span class="p">))</span> <span class="c1">// or MutateState( state.copy(items = currentState.items + item) )</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>and state transition are as follows:
 First <code>ShowContent(items = listof( Item("1"), Item("2"), Item("random 3")))</code> and
 secondly <code>ShowContent(items = listof( Item("1"), Item("2"), Item("random 6")))</code>. How comes that the second state
@@ -1922,31 +1923,29 @@ either trigger <code>OverrideState</code>, <code>MutateState</code> or <code>NoC
 know that at runtime only, but this is usually an indicator that you should rethink your state modelling to avoid having
 this issue).</p>
 <p>Usage:</p>
-<div class="highlight"><pre><span></span><code><span class="n">suspend</span> <span class="k">fun</span> <span class="nf">handleFooAction</span><span class="p">(</span><span class="n">action</span><span class="p">:</span> <span class="n">Action</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">State</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">action</span><span class="p">.</span><span class="k">data</span> <span class="p">==</span> <span class="s">&quot;foo&quot;</span> <span class="p">&amp;&amp;</span> <span class="n">stateSnapshot</span><span class="p">.</span><span class="k">data</span> <span class="p">==</span> <span class="s">&quot;bar&quot;</span><span class="p">)</span> <span class="c1">// just demo some random condition check</span>
+<div class="highlight"><pre><span></span><code><span class="kd">suspend</span> <span class="kd">fun</span> <span class="nf">handleFooAction</span><span class="p">(</span><span class="n">action</span><span class="p">:</span> <span class="n">Action</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">State</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">action</span><span class="p">.</span><span class="na">data</span> <span class="o">==</span> <span class="s">&quot;foo&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">stateSnapshot</span><span class="p">.</span><span class="na">data</span> <span class="o">==</span> <span class="s">&quot;bar&quot;</span><span class="p">)</span> <span class="c1">// just demo some random condition check</span>
         <span class="k">return</span> <span class="n">NoStateChange</span>
 
     <span class="p">...</span>
     <span class="k">return</span> <span class="n">OverrideState</span><span class="p">(</span><span class="n">OtherState</span><span class="p">())</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="instatestate">inState<code>&lt;State&gt;</code><a class="headerlink" href="#instatestate" title="Permanent link">&para;</a></h2>
 <p>The first concept we learn is <code>inState</code></p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
-    <span class="k">private</span> <span class="k">val</span> <span class="py">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
-<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="p">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="p">&gt;(</span><span class="n">initialState</span> <span class="p">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
+    <span class="kd">private</span> <span class="kd">val</span> <span class="nv">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
+<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="o">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="o">&gt;</span><span class="p">(</span><span class="n">initialState</span> <span class="o">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
 
-    <span class="n">init</span> <span class="p">{</span>
+    <span class="k">init</span> <span class="p">{</span>
         <span class="n">spec</span> <span class="p">{</span>
-            <span class="n">inState</span><span class="p">&lt;</span><span class="n">LoadingState</span><span class="p">&gt;</span> <span class="p">{</span>
+            <span class="n">inState</span><span class="o">&lt;</span><span class="n">LoadingState</span><span class="o">&gt;</span> <span class="p">{</span>
                 <span class="p">...</span>
             <span class="p">}</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>Please note that <code>inState</code> itself doesn&rsquo;t do anything. All we did so far with <code>inState&lt;LoadingState&gt;</code> is set an entry
 point. Next let&rsquo;s discuss what an <code>inState</code> can contain as triggers to actually &ldquo;do something&rdquo;:</p>
 <ol>
@@ -1959,17 +1958,17 @@ point. Next let&rsquo;s discuss what an <code>inState</code> can contain as trig
 <h3 id="onenter">onEnter<a class="headerlink" href="#onenter" title="Permanent link">&para;</a></h3>
 <p>What do we want to do when we enter the <code>LoadingState</code>? We want to do the http request, right? Let&rsquo;s do that by
 extending our example:</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
-    <span class="k">private</span> <span class="k">val</span> <span class="py">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
-<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="p">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="p">&gt;(</span><span class="n">initialState</span> <span class="p">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
+    <span class="kd">private</span> <span class="kd">val</span> <span class="nv">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
+<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="o">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="o">&gt;</span><span class="p">(</span><span class="n">initialState</span> <span class="o">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
 
-    <span class="n">init</span> <span class="p">{</span>
+    <span class="k">init</span> <span class="p">{</span>
         <span class="n">spec</span> <span class="p">{</span>
-            <span class="n">inState</span><span class="p">&lt;</span><span class="n">LoadingState</span><span class="p">&gt;</span> <span class="p">{</span>
-                <span class="n">onEnter</span> <span class="p">{</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">LoadingState</span> <span class="p">-&gt;</span>
+            <span class="n">inState</span><span class="o">&lt;</span><span class="n">LoadingState</span><span class="o">&gt;</span> <span class="p">{</span>
+                <span class="n">onEnter</span> <span class="p">{</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">LoadingState</span> <span class="o">-&gt;</span>
                     <span class="c1">// we entered the LoadingState, so let&#39;s do the http request</span>
                     <span class="k">try</span> <span class="p">{</span>
-                        <span class="k">val</span> <span class="py">items</span> <span class="p">=</span> <span class="n">httpClient</span><span class="p">.</span><span class="n">loadItems</span><span class="p">()</span>  <span class="c1">// loadItems() is a suspend function</span>
+                        <span class="kd">val</span> <span class="nv">items</span> <span class="o">=</span> <span class="n">httpClient</span><span class="p">.</span><span class="na">loadItems</span><span class="p">()</span>  <span class="c1">// loadItems() is a suspend function</span>
                         <span class="n">OverrideState</span><span class="p">(</span><span class="n">ShowContentState</span><span class="p">(</span><span class="n">items</span><span class="p">))</span> <span class="c1">// return OverrideState</span>
                     <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">t</span><span class="p">:</span> <span class="n">Throwable</span><span class="p">)</span> <span class="p">{</span>
                         <span class="n">OverrideState</span><span class="p">(</span><span class="n">ErrorState</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
@@ -1980,7 +1979,6 @@ extending our example:</p>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>There are a some new things like  <code>onEnter</code> and <code>OverrideState</code>. We covered <code>OverrideState</code> in
 a <a href="#ChangeState">dedicated section</a>. Let&rsquo;s talk about <code>onEnter</code>:</p>
 <ul>
@@ -1997,17 +1995,17 @@ react on Actions by using a <code>on&lt;MyAction&gt;{ ... }</code> block.</p>
 <p>In our example we want to retry loading if we are in <code>ErrorState</code> and the user clicks on a retry button. Clicking on
 that button dispatches a <code>RetryLoadingAction</code> to our state machine. Let&rsquo;s extend our FlowReduxStateMachine to react on
 such an action if the current state is <code>ErrorState</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
-    <span class="k">private</span> <span class="k">val</span> <span class="py">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
-<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="p">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="p">&gt;(</span><span class="n">initialState</span> <span class="p">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
+    <span class="kd">private</span> <span class="kd">val</span> <span class="nv">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
+<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="o">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="o">&gt;</span><span class="p">(</span><span class="n">initialState</span> <span class="o">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
 
-    <span class="n">init</span> <span class="p">{</span>
+    <span class="k">init</span> <span class="p">{</span>
         <span class="n">spec</span> <span class="p">{</span>
-            <span class="n">inState</span><span class="p">&lt;</span><span class="n">LoadingState</span><span class="p">&gt;</span> <span class="p">{</span>
-                <span class="n">onEnter</span> <span class="p">{</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">LoadingState</span> <span class="p">-&gt;</span>
+            <span class="n">inState</span><span class="o">&lt;</span><span class="n">LoadingState</span><span class="o">&gt;</span> <span class="p">{</span>
+                <span class="n">onEnter</span> <span class="p">{</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">LoadingState</span> <span class="o">-&gt;</span>
                     <span class="c1">// we entered the LoadingState, so let&#39;s do the http request</span>
                     <span class="k">try</span> <span class="p">{</span>
-                        <span class="k">val</span> <span class="py">items</span> <span class="p">=</span> <span class="n">httpClient</span><span class="p">.</span><span class="n">loadItems</span><span class="p">()</span>
+                        <span class="kd">val</span> <span class="nv">items</span> <span class="o">=</span> <span class="n">httpClient</span><span class="p">.</span><span class="na">loadItems</span><span class="p">()</span>
                         <span class="n">OverrideState</span><span class="p">(</span><span class="n">ShowContentState</span><span class="p">(</span><span class="n">items</span><span class="p">))</span>
                     <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">t</span><span class="p">:</span> <span class="n">Throwable</span><span class="p">)</span> <span class="p">{</span>
                         <span class="n">OverrideState</span><span class="p">(</span><span class="n">ErrorState</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
@@ -2016,8 +2014,8 @@ such an action if the current state is <code>ErrorState</code>:</p>
             <span class="p">}</span>
 
             <span class="c1">// let&#39;s add a new inState{...} with an on{...} block</span>
-            <span class="n">inState</span><span class="p">&lt;</span><span class="n">ErrorState</span><span class="p">&gt;</span> <span class="p">{</span>
-                <span class="n">on</span><span class="p">&lt;</span><span class="n">RetryLoadingAction</span><span class="p">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">:</span> <span class="n">RetryLoadingAction</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">ErrorState</span> <span class="p">-&gt;</span>
+            <span class="n">inState</span><span class="o">&lt;</span><span class="n">ErrorState</span><span class="o">&gt;</span> <span class="p">{</span>
+                <span class="n">on</span><span class="o">&lt;</span><span class="n">RetryLoadingAction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">:</span> <span class="n">RetryLoadingAction</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">ErrorState</span> <span class="o">-&gt;</span>
                     <span class="c1">// This block triggers if we are in ErrorState </span>
                     <span class="c1">// RetryLoadingAction has been dispatched to this state machine.</span>
                     <span class="c1">// In that case we transition to LoadingState which then starts the http</span>
@@ -2030,7 +2028,6 @@ such an action if the current state is <code>ErrorState</code>:</p>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>A <code>on { ... }</code> block gets 3 parameters:  <code>action</code> which is the actual instance of the <code>Action</code> that triggered this block
 and <code>stateSnapshot</code> which is a snapshot of the current state.
 <code>on { ... }</code> is actually pretty similar to <code>onEnter {...}</code> just with a different &ldquo;trigger&rdquo; (action vs. entering a state)
@@ -2049,25 +2046,24 @@ how this is useful let&rsquo;s extend our example from above. Let&rsquo;s say wh
 to retry loading the items after 3 seconds in <code>ErrorState</code> or anytime before the 3 seconds have elapsed if the user
 clicks the retry button. Furthermore the 3 seconds countdown timer should be displayed in our app:</p>
 <p>To implement this let&rsquo;s first extend our <code>ErrorState</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="k">data</span> <span class="k">class</span> <span class="nc">ErrorState</span><span class="p">(</span>
-    <span class="k">val</span> <span class="py">cause</span><span class="p">:</span> <span class="n">Throwable</span><span class="p">,</span>
-    <span class="k">val</span> <span class="py">countdown</span><span class="p">:</span> <span class="n">Int</span>    <span class="c1">// This value is decreased from 3 then 2 then 1 and represents the countdown value.</span>
+<div class="highlight"><pre><span></span><code><span class="kd">data</span> <span class="kd">class</span> <span class="nc">ErrorState</span><span class="p">(</span>
+    <span class="kd">val</span> <span class="nv">cause</span><span class="p">:</span> <span class="n">Throwable</span><span class="p">,</span>
+    <span class="kd">val</span> <span class="nv">countdown</span><span class="p">:</span> <span class="kt">Int</span>    <span class="c1">// This value is decreased from 3 then 2 then 1 and represents the countdown value.</span>
 <span class="p">)</span> <span class="p">:</span> <span class="n">State</span><span class="p">()</span>
 </code></pre></div>
-
 <p>Now let&rsquo;s add some countdown capabilities to our state machine by using <code>collectWhileInState()</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
-    <span class="k">private</span> <span class="k">val</span> <span class="py">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
-<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="p">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="p">&gt;(</span><span class="n">initialState</span> <span class="p">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
+    <span class="kd">private</span> <span class="kd">val</span> <span class="nv">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
+<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="o">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="o">&gt;</span><span class="p">(</span><span class="n">initialState</span> <span class="o">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
 
-    <span class="n">init</span> <span class="p">{</span>
+    <span class="k">init</span> <span class="p">{</span>
         <span class="n">spec</span> <span class="p">{</span>
-            <span class="n">inState</span><span class="p">&lt;</span><span class="n">LoadingState</span><span class="p">&gt;</span> <span class="p">{</span>
-                <span class="n">inState</span><span class="p">&lt;</span><span class="n">LoadingState</span><span class="p">&gt;</span> <span class="p">{</span>
-                    <span class="n">onEnter</span> <span class="p">{</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">LoadingState</span> <span class="p">-&gt;</span>
+            <span class="n">inState</span><span class="o">&lt;</span><span class="n">LoadingState</span><span class="o">&gt;</span> <span class="p">{</span>
+                <span class="n">inState</span><span class="o">&lt;</span><span class="n">LoadingState</span><span class="o">&gt;</span> <span class="p">{</span>
+                    <span class="n">onEnter</span> <span class="p">{</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">LoadingState</span> <span class="o">-&gt;</span>
                         <span class="c1">// we entered the LoadingState, so let&#39;s do the http request</span>
                         <span class="k">try</span> <span class="p">{</span>
-                            <span class="k">val</span> <span class="py">items</span> <span class="p">=</span> <span class="n">httpClient</span><span class="p">.</span><span class="n">loadItems</span><span class="p">()</span>
+                            <span class="kd">val</span> <span class="nv">items</span> <span class="o">=</span> <span class="n">httpClient</span><span class="p">.</span><span class="na">loadItems</span><span class="p">()</span>
                             <span class="n">OverrideState</span><span class="p">(</span><span class="n">ShowContentState</span><span class="p">(</span><span class="n">items</span><span class="p">))</span>
                         <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">t</span><span class="p">:</span> <span class="n">Throwable</span><span class="p">)</span> <span class="p">{</span>
                             <span class="n">OverrideState</span><span class="p">(</span><span class="n">ErrorState</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
@@ -2076,17 +2072,17 @@ clicks the retry button. Furthermore the 3 seconds countdown timer should be dis
                 <span class="p">}</span>
 
                 <span class="c1">// let&#39;s add a new inState{...} with an on{...} block</span>
-                <span class="n">inState</span><span class="p">&lt;</span><span class="n">ErrorState</span><span class="p">&gt;</span> <span class="p">{</span>
-                    <span class="n">on</span><span class="p">&lt;</span><span class="n">RetryLoadingAction</span><span class="p">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">:</span> <span class="n">RetryLoadingAction</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">ErrorState</span> <span class="p">-&gt;</span>
+                <span class="n">inState</span><span class="o">&lt;</span><span class="n">ErrorState</span><span class="o">&gt;</span> <span class="p">{</span>
+                    <span class="n">on</span><span class="o">&lt;</span><span class="n">RetryLoadingAction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">:</span> <span class="n">RetryLoadingAction</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">ErrorState</span> <span class="o">-&gt;</span>
                         <span class="n">OverrideState</span><span class="p">(</span><span class="n">LoadingState</span><span class="p">)</span>
                     <span class="p">}</span>
 
-                    <span class="n">collectWhileInState</span><span class="p">(</span><span class="n">timerThatEmitsEverySecond</span><span class="p">())</span> <span class="p">{</span> <span class="n">value</span><span class="p">:</span> <span class="n">Int</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">ErrorState</span> <span class="p">-&gt;</span>
+                    <span class="n">collectWhileInState</span><span class="p">(</span><span class="n">timerThatEmitsEverySecond</span><span class="p">())</span> <span class="p">{</span> <span class="n">value</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">ErrorState</span> <span class="o">-&gt;</span>
                         <span class="c1">// This block triggers every time the timer emits</span>
                         <span class="c1">// which happens every second</span>
-                        <span class="n">MutateState</span><span class="p">&lt;</span><span class="n">ErrorState</span><span class="p">,</span> <span class="n">State</span><span class="p">&gt;</span> <span class="p">{</span> <span class="c1">// in this block, this references ErrorState </span>
-                            <span class="k">if</span> <span class="p">(</span><span class="n">countdown</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>   <span class="c1">// is the same as this.countdown references ErrorState</span>
-                                <span class="n">copy</span><span class="p">(</span><span class="n">countdown</span> <span class="p">=</span> <span class="n">countdown</span> <span class="p">-</span> <span class="m">1</span><span class="p">)</span> <span class="c1">//  decrease the countdown by 1 second</span>
+                        <span class="n">MutateState</span><span class="o">&lt;</span><span class="n">ErrorState</span><span class="p">,</span> <span class="n">State</span><span class="o">&gt;</span> <span class="p">{</span> <span class="c1">// in this block, this references ErrorState </span>
+                            <span class="k">if</span> <span class="p">(</span><span class="n">countdown</span> <span class="o">&gt;</span> <span class="m">0</span><span class="p">)</span>   <span class="c1">// is the same as this.countdown references ErrorState</span>
+                                <span class="n">copy</span><span class="p">(</span><span class="n">countdown</span> <span class="o">=</span> <span class="n">countdown</span> <span class="o">-</span> <span class="m">1</span><span class="p">)</span> <span class="c1">//  decrease the countdown by 1 second</span>
                             <span class="k">else</span>
                                 <span class="n">LoadingState</span> <span class="c1">// transition to the LoadingState</span>
                         <span class="p">}</span>
@@ -2096,17 +2092,16 @@ clicks the retry button. Furthermore the 3 seconds countdown timer should be dis
         <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">timerThatEmitsEverySecond</span><span class="p">():</span> <span class="n">Flow</span><span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;</span> <span class="p">=</span> <span class="n">flow</span> <span class="p">{</span>
-        <span class="k">var</span> <span class="py">timeElapsed</span> <span class="p">=</span> <span class="m">0</span>
+    <span class="kd">private</span> <span class="kd">fun</span> <span class="nf">timerThatEmitsEverySecond</span><span class="p">():</span> <span class="n">Flow</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span> <span class="o">=</span> <span class="n">flow</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nv">timeElapsed</span> <span class="o">=</span> <span class="m">0</span>
         <span class="k">while</span> <span class="p">(</span><span class="n">isActive</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// is Flow still active?</span>
             <span class="n">delay</span><span class="p">(</span><span class="m">1000</span><span class="p">)</span>     <span class="c1">// wait 1 second</span>
-            <span class="n">timeElapsed</span><span class="p">++</span>
+            <span class="n">timeElapsed</span><span class="o">++</span>
             <span class="n">emit</span><span class="p">(</span><span class="n">timeElapsed</span><span class="p">)</span> <span class="c1">// Flow Emits value</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>Let&rsquo;s look at the source code above step by step. Whenever we are in <code>LoadingState</code> and an error occurs while loading
 the items we go into
 <code>ErrorState</code>. Nothing has changes from previous code snipped. What is new is that <code>ErrorState</code> contains an additional
@@ -2129,64 +2124,63 @@ machine is expressed us it&rsquo;s own type in Kotlin. Again, this is a best pra
 use <code>inStateWithCondition(isInState: (State) -&gt; Boolean)</code>.</p>
 <p>Example: One could have also modeled the state for our example above as the following:</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// TO MODEL YOUR STATE LIKE THIS IS NOT BEST PRACTICE! Use sealed class instead.</span>
-<span class="k">data</span> <span class="k">class</span> <span class="nc">State</span><span class="p">(</span>
-    <span class="k">val</span> <span class="py">loading</span><span class="p">:</span> <span class="n">Boolean</span><span class="p">,</span> <span class="c1">// true means loading, false means not loading</span>
-    <span class="k">val</span> <span class="py">items</span><span class="p">:</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Items</span><span class="p">&gt;,</span> <span class="c1">// empty list if no items loaded yet</span>
-    <span class="k">val</span> <span class="py">error</span><span class="p">:</span> <span class="n">Throwable</span><span class="p">?,</span> <span class="c1">// if not null we are in error state</span>
-    <span class="k">val</span> <span class="py">errorCountDown</span><span class="p">:</span> <span class="n">Int</span><span class="p">?</span> <span class="c1">// the seconds for the error countdown</span>
+<span class="kd">data</span> <span class="kd">class</span> <span class="nc">State</span><span class="p">(</span>
+    <span class="kd">val</span> <span class="nv">loading</span><span class="p">:</span> <span class="kt">Boolean</span><span class="p">,</span> <span class="c1">// true means loading, false means not loading</span>
+    <span class="kd">val</span> <span class="nv">items</span><span class="p">:</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Items</span><span class="o">&gt;</span><span class="p">,</span> <span class="c1">// empty list if no items loaded yet</span>
+    <span class="kd">val</span> <span class="nv">error</span><span class="p">:</span> <span class="n">Throwable?,</span> <span class="c1">// if not null we are in error state</span>
+    <span class="kd">val</span> <span class="nv">errorCountDown</span><span class="p">:</span> <span class="kt">Int?</span> <span class="c1">// the seconds for the error countdown</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p><strong>AGAIN, the example shown above is not the recommended way. We strongly recommend to use sealed classes instead to
 model state as shown at the beginning of this document.</strong></p>
 <p>We just do this for demo purpose to demonstrate a way how to customize <code>inState</code>. Given the state from above, what we
 can do now with our DSL is the following:</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
-    <span class="k">private</span> <span class="k">val</span> <span class="py">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
-<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="p">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="p">&gt;(</span>
-    <span class="n">initialState</span> <span class="p">=</span> <span class="n">State</span><span class="p">(</span>
-        <span class="n">loading</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span>
-        <span class="n">items</span> <span class="p">=</span> <span class="n">emptyList</span><span class="p">(),</span>
-        <span class="n">error</span> <span class="p">=</span> <span class="k">null</span><span class="p">,</span>
-        <span class="n">errorCountDown</span> <span class="p">=</span> <span class="k">null</span>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
+    <span class="kd">private</span> <span class="kd">val</span> <span class="nv">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
+<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="o">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">initialState</span> <span class="o">=</span> <span class="n">State</span><span class="p">(</span>
+        <span class="n">loading</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="n">items</span> <span class="o">=</span> <span class="n">emptyList</span><span class="p">(),</span>
+        <span class="n">error</span> <span class="o">=</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="n">errorCountDown</span> <span class="o">=</span> <span class="kc">null</span>
     <span class="p">)</span>
 <span class="p">)</span> <span class="p">{</span>
 
-    <span class="n">init</span> <span class="p">{</span>
+    <span class="k">init</span> <span class="p">{</span>
         <span class="n">spec</span> <span class="p">{</span>
-            <span class="n">inStateWithCondition</span><span class="p">(</span><span class="n">isInState</span> <span class="p">=</span> <span class="p">{</span> <span class="n">state</span> <span class="p">-&gt;</span> <span class="n">state</span><span class="p">.</span><span class="n">loading</span> <span class="p">==</span> <span class="k">true</span> <span class="p">})</span> <span class="p">{</span>
-                <span class="n">onEnter</span> <span class="p">{</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">State</span> <span class="p">-&gt;</span>
+            <span class="n">inStateWithCondition</span><span class="p">(</span><span class="n">isInState</span> <span class="o">=</span> <span class="p">{</span> <span class="n">state</span> <span class="o">-&gt;</span> <span class="n">state</span><span class="p">.</span><span class="na">loading</span> <span class="o">==</span> <span class="kc">true</span> <span class="p">})</span> <span class="p">{</span>
+                <span class="n">onEnter</span> <span class="p">{</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">State</span> <span class="o">-&gt;</span>
                     <span class="c1">// we entered the LoadingState, so let&#39;s do the http request</span>
                     <span class="k">try</span> <span class="p">{</span>
-                        <span class="k">val</span> <span class="py">items</span> <span class="p">=</span> <span class="n">httpClient</span><span class="p">.</span><span class="n">loadItems</span><span class="p">()</span>
+                        <span class="kd">val</span> <span class="nv">items</span> <span class="o">=</span> <span class="n">httpClient</span><span class="p">.</span><span class="na">loadItems</span><span class="p">()</span>
                         <span class="n">OverrideState</span><span class="p">(</span>
-                            <span class="n">State</span><span class="p">(</span><span class="n">loading</span> <span class="p">=</span> <span class="k">false</span><span class="p">,</span> <span class="n">items</span> <span class="p">=</span> <span class="n">items</span><span class="p">,</span> <span class="n">error</span> <span class="p">=</span> <span class="k">null</span><span class="p">,</span> <span class="n">errorCountdown</span> <span class="p">=</span> <span class="k">null</span><span class="p">)</span>
+                            <span class="n">State</span><span class="p">(</span><span class="n">loading</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="n">items</span> <span class="o">=</span> <span class="n">items</span><span class="p">,</span> <span class="n">error</span> <span class="o">=</span> <span class="kc">null</span><span class="p">,</span> <span class="n">errorCountdown</span> <span class="o">=</span> <span class="kc">null</span><span class="p">)</span>
                         <span class="p">)</span>
                     <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">t</span><span class="p">:</span> <span class="n">Throwable</span><span class="p">)</span> <span class="p">{</span>
                         <span class="n">OverrideState</span><span class="p">(</span>
-                            <span class="n">State</span><span class="p">(</span><span class="n">loading</span> <span class="p">=</span> <span class="k">false</span><span class="p">,</span> <span class="n">items</span> <span class="p">=</span> <span class="n">emptyList</span><span class="p">(),</span> <span class="n">error</span> <span class="p">=</span> <span class="n">t</span><span class="p">,</span> <span class="n">errorCountdown</span> <span class="p">=</span> <span class="m">3</span><span class="p">)</span>
+                            <span class="n">State</span><span class="p">(</span><span class="n">loading</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="n">items</span> <span class="o">=</span> <span class="n">emptyList</span><span class="p">(),</span> <span class="n">error</span> <span class="o">=</span> <span class="n">t</span><span class="p">,</span> <span class="n">errorCountdown</span> <span class="o">=</span> <span class="m">3</span><span class="p">)</span>
                         <span class="p">)</span> <span class="c1">// Countdown starts with 3 seconds</span>
                     <span class="p">}</span>
                 <span class="p">}</span>
             <span class="p">}</span>
 
-            <span class="n">inStateWithCondition</span><span class="p">(</span><span class="n">isInState</span> <span class="p">=</span> <span class="p">{</span> <span class="n">state</span> <span class="p">-&gt;</span> <span class="n">state</span><span class="p">.</span><span class="n">error</span> <span class="p">!=</span> <span class="k">null</span> <span class="p">})</span> <span class="p">{</span>
-                <span class="n">on</span><span class="p">&lt;</span><span class="n">RetryLoadingAction</span><span class="p">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">,</span> <span class="n">stateSnapshot</span> <span class="p">-&gt;</span>
+            <span class="n">inStateWithCondition</span><span class="p">(</span><span class="n">isInState</span> <span class="o">=</span> <span class="p">{</span> <span class="n">state</span> <span class="o">-&gt;</span> <span class="n">state</span><span class="p">.</span><span class="na">error</span> <span class="o">!=</span> <span class="kc">null</span> <span class="p">})</span> <span class="p">{</span>
+                <span class="n">on</span><span class="o">&lt;</span><span class="n">RetryLoadingAction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">,</span> <span class="n">stateSnapshot</span> <span class="o">-&gt;</span>
                     <span class="n">OverrideState</span><span class="p">(</span>
-                        <span class="n">State</span><span class="p">(</span><span class="n">loading</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span> <span class="n">items</span> <span class="p">=</span> <span class="n">emptyList</span><span class="p">(),</span> <span class="n">error</span> <span class="p">=</span> <span class="k">null</span><span class="p">,</span> <span class="n">errorCountdown</span> <span class="p">=</span> <span class="k">null</span><span class="p">)</span>
+                        <span class="n">State</span><span class="p">(</span><span class="n">loading</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">items</span> <span class="o">=</span> <span class="n">emptyList</span><span class="p">(),</span> <span class="n">error</span> <span class="o">=</span> <span class="kc">null</span><span class="p">,</span> <span class="n">errorCountdown</span> <span class="o">=</span> <span class="kc">null</span><span class="p">)</span>
                     <span class="p">)</span>
                 <span class="p">}</span>
 
-                <span class="n">collectWhileInState</span><span class="p">(</span><span class="n">timerThatEmitsEverySecond</span><span class="p">())</span> <span class="p">{</span> <span class="n">value</span><span class="p">,</span> <span class="n">stateSnapshot</span> <span class="p">-&gt;</span>
-                    <span class="n">MutateState</span><span class="p">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">State</span><span class="p">&gt;</span> <span class="p">{</span>
-                        <span class="k">if</span> <span class="p">(</span><span class="n">errorCountdown</span><span class="o">!!</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
-                            <span class="n">copy</span><span class="p">(</span><span class="n">errorCountdown</span> <span class="p">=</span> <span class="n">errorCountdown</span><span class="o">!!</span> <span class="p">-</span> <span class="m">1</span><span class="p">)</span> <span class="c1">//  decrease the countdown by 1 second</span>
+                <span class="n">collectWhileInState</span><span class="p">(</span><span class="n">timerThatEmitsEverySecond</span><span class="p">())</span> <span class="p">{</span> <span class="n">value</span><span class="p">,</span> <span class="n">stateSnapshot</span> <span class="o">-&gt;</span>
+                    <span class="n">MutateState</span><span class="o">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">State</span><span class="o">&gt;</span> <span class="p">{</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">errorCountdown</span><span class="o">!!</span> <span class="o">&gt;</span> <span class="m">0</span><span class="p">)</span>
+                            <span class="n">copy</span><span class="p">(</span><span class="n">errorCountdown</span> <span class="o">=</span> <span class="n">errorCountdown</span><span class="o">!!</span> <span class="o">-</span> <span class="m">1</span><span class="p">)</span> <span class="c1">//  decrease the countdown by 1 second</span>
                         <span class="k">else</span>
                             <span class="n">State</span><span class="p">(</span>
-                                <span class="n">loading</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span>
-                                <span class="n">items</span> <span class="p">=</span> <span class="n">emptyList</span><span class="p">(),</span>
-                                <span class="n">error</span> <span class="p">=</span> <span class="k">null</span><span class="p">,</span>
-                                <span class="n">errorCountdown</span> <span class="p">=</span> <span class="k">null</span>
+                                <span class="n">loading</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+                                <span class="n">items</span> <span class="o">=</span> <span class="n">emptyList</span><span class="p">(),</span>
+                                <span class="n">error</span> <span class="o">=</span> <span class="kc">null</span><span class="p">,</span>
+                                <span class="n">errorCountdown</span> <span class="o">=</span> <span class="kc">null</span>
                             <span class="p">)</span> <span class="c1">// transition to the LoadingState</span>
                     <span class="p">}</span>
                 <span class="p">}</span>
@@ -2195,7 +2189,6 @@ can do now with our DSL is the following:</p>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>Instead of <code>inState&lt;State&gt; { ... }</code> we can use <code>inStateWithCondition</code> that instead of generics take a lambda as
 parameter that looks like <code>(State) -&gt; Boolean</code> so that. If that lambda returns <code>true</code> it means we are in that state,
 otherwise not (returning false). The rest still remains the same. You can use <code>onEnter</code>, <code>on&lt;Action&gt;</code>
@@ -2204,35 +2197,35 @@ FlowRedux cannot infer types in <code>onEnter</code>, <code>on</code>, etc.</p>
 <h2 id="collectwhileinanystate">collectWhileInAnyState()<a class="headerlink" href="#collectwhileinanystate" title="Permanent link">&para;</a></h2>
 <p>If for whatever reason you want to trigger a state change out of  <code>inState&lt;&gt;</code>, <code>onEnter { ... }</code>, <code>on&lt;Action&gt;</code>
 or <code>collectWhileInState { ... }</code> by observing a <code>Flow</code> then <code>collectWhileInAnyState</code> is what you are looking for:</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
-    <span class="k">private</span> <span class="k">val</span> <span class="py">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
-<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="p">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="p">&gt;(</span><span class="n">initialState</span> <span class="p">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
+    <span class="kd">private</span> <span class="kd">val</span> <span class="nv">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
+<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="o">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="o">&gt;</span><span class="p">(</span><span class="n">initialState</span> <span class="o">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
 
-    <span class="n">init</span> <span class="p">{</span>
+    <span class="k">init</span> <span class="p">{</span>
         <span class="n">spec</span> <span class="p">{</span>
-            <span class="n">inState</span><span class="p">&lt;</span><span class="n">LoadingState</span><span class="p">&gt;</span> <span class="p">{</span>
-                <span class="n">onEnter</span> <span class="p">{</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">LoadingState</span> <span class="p">-&gt;</span>
+            <span class="n">inState</span><span class="o">&lt;</span><span class="n">LoadingState</span><span class="o">&gt;</span> <span class="p">{</span>
+                <span class="n">onEnter</span> <span class="p">{</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">LoadingState</span> <span class="o">-&gt;</span>
                     <span class="p">...</span>
                 <span class="p">}</span>
             <span class="p">}</span>
 
-            <span class="n">inState</span><span class="p">&lt;</span><span class="n">ErrorState</span><span class="p">&gt;</span> <span class="p">{</span>
-                <span class="n">on</span><span class="p">&lt;</span><span class="n">RetryLoadingAction</span><span class="p">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">:</span> <span class="n">RetryLoadingAction</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">ErrorState</span> <span class="p">-&gt;</span>
+            <span class="n">inState</span><span class="o">&lt;</span><span class="n">ErrorState</span><span class="o">&gt;</span> <span class="p">{</span>
+                <span class="n">on</span><span class="o">&lt;</span><span class="n">RetryLoadingAction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">:</span> <span class="n">RetryLoadingAction</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">ErrorState</span> <span class="o">-&gt;</span>
                     <span class="p">...</span>
                 <span class="p">}</span>
 
-                <span class="n">collectWhileInState</span><span class="p">(</span><span class="n">timer</span><span class="p">)</span> <span class="p">{</span> <span class="n">value</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">ErrorState</span> <span class="p">-&gt;</span>
+                <span class="n">collectWhileInState</span><span class="p">(</span><span class="n">timer</span><span class="p">)</span> <span class="p">{</span> <span class="n">value</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">ErrorState</span> <span class="o">-&gt;</span>
                     <span class="p">...</span>
                 <span class="p">}</span>
             <span class="p">}</span>
 
-            <span class="k">val</span> <span class="py">aFlow</span><span class="p">:</span> <span class="n">Flow</span><span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;</span> <span class="p">=</span> <span class="n">flowOf</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">)</span>
-            <span class="n">collectWhileInAnyState</span><span class="p">(</span><span class="n">aFlow</span><span class="p">)</span> <span class="p">{</span> <span class="n">value</span><span class="p">:</span> <span class="n">Int</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">State</span> <span class="p">-&gt;</span>
+            <span class="kd">val</span> <span class="nv">aFlow</span><span class="p">:</span> <span class="n">Flow</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span> <span class="o">=</span> <span class="n">flowOf</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">)</span>
+            <span class="n">collectWhileInAnyState</span><span class="p">(</span><span class="n">aFlow</span><span class="p">)</span> <span class="p">{</span> <span class="n">value</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">State</span> <span class="o">-&gt;</span>
                 <span class="c1">// Will trigger anytime flow emits a value</span>
                 <span class="p">...</span>
             <span class="p">}</span>
 
-            <span class="n">collectWhileInAnyState</span><span class="p">(</span><span class="n">anotherFlow</span><span class="p">)</span> <span class="p">{</span> <span class="n">value</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">State</span> <span class="p">-&gt;</span>
+            <span class="n">collectWhileInAnyState</span><span class="p">(</span><span class="n">anotherFlow</span><span class="p">)</span> <span class="p">{</span> <span class="n">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">State</span> <span class="o">-&gt;</span>
                 <span class="c1">// Will trigger anytime flow emits a value</span>
                 <span class="p">...</span>
             <span class="p">}</span>
@@ -2240,7 +2233,6 @@ or <code>collectWhileInState { ... }</code> by observing a <code>Flow</code> the
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p><code>collectWhileInAnyState()</code> is like <code>collectWhileInState()</code> just that it is not bound to the current state
 like <code>collectWhileInState()</code> is.
 <code>collectWhileInAnyState()</code> will stop collecting the passed in Flow only if the CoroutineScope of the whole
@@ -2248,15 +2240,14 @@ FlowReduxStateMachine gets canceled.</p>
 <h2 id="flatmappolicy">FlatMapPolicy<a class="headerlink" href="#flatmappolicy" title="Permanent link">&para;</a></h2>
 <p>Have you ever wondered what would happen if you would execute <code>Action</code> very fast 1 after another? For example:</p>
 <div class="highlight"><pre><span></span><code><span class="n">spec</span> <span class="p">{</span>
-    <span class="n">inState</span><span class="p">&lt;</span><span class="n">FooState</span><span class="p">&gt;</span> <span class="p">{</span>
-        <span class="n">on</span><span class="p">&lt;</span><span class="n">BarAction</span><span class="p">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">,</span> <span class="n">stateSnapshot</span> <span class="p">-&gt;</span>
+    <span class="n">inState</span><span class="o">&lt;</span><span class="n">FooState</span><span class="o">&gt;</span> <span class="p">{</span>
+        <span class="n">on</span><span class="o">&lt;</span><span class="n">BarAction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">,</span> <span class="n">stateSnapshot</span> <span class="o">-&gt;</span>
             <span class="n">delay</span><span class="p">(</span><span class="m">5000</span><span class="p">)</span> <span class="c1">// wait for 5 seconds</span>
             <span class="n">OverrideState</span><span class="p">(</span><span class="n">OtherState</span><span class="p">())</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>The example above shows a problem with async. state machines like FlowRedux:
 If our state machine is in <code>FooState</code> and a <code>BarAction</code> got triggered, we wait for 5 seconds and then set the state to
 another state. What if while waiting 5 seconds (i.e. let&rsquo;s say after 3 seconds of waiting) another <code>BarAction</code> gets
@@ -2270,15 +2261,14 @@ options to choose from:</p>
   example:</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="n">spec</span> <span class="p">{</span>
-    <span class="n">inState</span><span class="p">&lt;</span><span class="n">FooState</span><span class="p">&gt;</span> <span class="p">{</span>
-        <span class="n">on</span><span class="p">&lt;</span><span class="n">BarAction</span><span class="p">&gt;(</span><span class="n">flatMapPolicy</span> <span class="p">=</span> <span class="n">FlapMapPolicy</span><span class="p">.</span><span class="n">MERGE</span><span class="p">)</span> <span class="p">{</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">setState</span> <span class="p">-&gt;</span>
+    <span class="n">inState</span><span class="o">&lt;</span><span class="n">FooState</span><span class="o">&gt;</span> <span class="p">{</span>
+        <span class="n">on</span><span class="o">&lt;</span><span class="n">BarAction</span><span class="o">&gt;</span><span class="p">(</span><span class="n">flatMapPolicy</span> <span class="o">=</span> <span class="n">FlapMapPolicy</span><span class="p">.</span><span class="na">MERGE</span><span class="p">)</span> <span class="p">{</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">setState</span> <span class="o">-&gt;</span>
             <span class="n">delay</span><span class="p">(</span><span class="n">randomInt</span><span class="p">())</span> <span class="c1">// wait for some random time</span>
             <span class="n">setState</span> <span class="p">{</span> <span class="n">OtherState</span> <span class="p">}</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>Let&rsquo;s assume that we trigger two times <code>BarAction</code>. We use random amount of seconds for waiting. Since we
 use <code>MERGE</code> <code>on&lt;BarAction&gt;</code> block gets executed 2 times without canceling the previous one (that is the difference
 to <code>LATEST</code>). Moreover, <code>MERGE</code> doesn&rsquo;t make any promise on order of execution of the block (see <code>CONCAT</code> if you need
@@ -2297,33 +2287,33 @@ could complete before the first execution (because using a random time of waitin
 <h2 id="best-practice">Best Practice<a class="headerlink" href="#best-practice" title="Permanent link">&para;</a></h2>
 <p>One very important aspect of the DSL is to provide a readable and maintainable way to reason about your state machine.
 Let&rsquo; take a look at our example state machine:</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
-    <span class="k">private</span> <span class="k">val</span> <span class="py">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
-<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="p">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="p">&gt;(</span><span class="n">initialState</span> <span class="p">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
+    <span class="kd">private</span> <span class="kd">val</span> <span class="nv">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
+<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="o">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="o">&gt;</span><span class="p">(</span><span class="n">initialState</span> <span class="o">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
 
-    <span class="n">init</span> <span class="p">{</span>
+    <span class="k">init</span> <span class="p">{</span>
         <span class="n">spec</span> <span class="p">{</span>
-            <span class="n">inState</span><span class="p">&lt;</span><span class="n">LoadingState</span><span class="p">&gt;</span> <span class="p">{</span>
-                <span class="n">onEnter</span> <span class="p">{</span> <span class="n">stateSnapshot</span> <span class="p">-&gt;</span>
+            <span class="n">inState</span><span class="o">&lt;</span><span class="n">LoadingState</span><span class="o">&gt;</span> <span class="p">{</span>
+                <span class="n">onEnter</span> <span class="p">{</span> <span class="n">stateSnapshot</span> <span class="o">-&gt;</span>
                     <span class="c1">// we entered the LoadingState, so let&#39;s do the http request</span>
                     <span class="k">try</span> <span class="p">{</span>
-                        <span class="k">val</span> <span class="py">items</span> <span class="p">=</span> <span class="n">httpClient</span><span class="p">.</span><span class="n">loadItems</span><span class="p">()</span>
+                        <span class="kd">val</span> <span class="nv">items</span> <span class="o">=</span> <span class="n">httpClient</span><span class="p">.</span><span class="na">loadItems</span><span class="p">()</span>
                         <span class="n">OverrideState</span><span class="p">(</span><span class="n">ShowContentState</span><span class="p">(</span><span class="n">items</span><span class="p">))</span>
                     <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">t</span><span class="p">:</span> <span class="n">Throwable</span><span class="p">)</span> <span class="p">{</span>
-                        <span class="n">OverrideState</span><span class="p">(</span><span class="n">ErrorState</span><span class="p">(</span><span class="n">cause</span> <span class="p">=</span> <span class="n">t</span><span class="p">,</span> <span class="n">countdown</span> <span class="p">=</span> <span class="m">3</span><span class="p">))</span> <span class="c1">// Countdown starts with 3 seconds</span>
+                        <span class="n">OverrideState</span><span class="p">(</span><span class="n">ErrorState</span><span class="p">(</span><span class="n">cause</span> <span class="o">=</span> <span class="n">t</span><span class="p">,</span> <span class="n">countdown</span> <span class="o">=</span> <span class="m">3</span><span class="p">))</span> <span class="c1">// Countdown starts with 3 seconds</span>
                     <span class="p">}</span>
                 <span class="p">}</span>
             <span class="p">}</span>
 
-            <span class="n">inState</span><span class="p">&lt;</span><span class="n">ErrorState</span><span class="p">&gt;</span> <span class="p">{</span>
-                <span class="n">on</span><span class="p">&lt;</span><span class="n">RetryLoadingAction</span><span class="p">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">,</span> <span class="n">stateSnapshot</span> <span class="p">-&gt;</span>
+            <span class="n">inState</span><span class="o">&lt;</span><span class="n">ErrorState</span><span class="o">&gt;</span> <span class="p">{</span>
+                <span class="n">on</span><span class="o">&lt;</span><span class="n">RetryLoadingAction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">,</span> <span class="n">stateSnapshot</span> <span class="o">-&gt;</span>
                     <span class="n">OverrideState</span><span class="p">(</span><span class="n">LoadingState</span><span class="p">)</span>
                 <span class="p">}</span>
 
-                <span class="n">collectWhileInState</span><span class="p">(</span><span class="n">timerThatEmitsEverySecond</span><span class="p">())</span> <span class="p">{</span> <span class="n">value</span><span class="p">,</span> <span class="n">stateSnapshot</span> <span class="p">-&gt;</span>
-                    <span class="n">MutateState</span><span class="p">&lt;</span><span class="n">ErrorState</span><span class="p">,</span> <span class="n">State</span><span class="p">&gt;</span> <span class="p">{</span>
-                        <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">countdownTimeLeft</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="c1">// this is referencing ErrorState</span>
-                            <span class="k">this</span><span class="p">.</span><span class="n">copy</span><span class="p">(</span><span class="n">countdown</span> <span class="p">=</span> <span class="n">countdownTimeLeft</span> <span class="p">-</span> <span class="m">1</span><span class="p">)</span>  <span class="c1">//  decrease the countdown by 1 second</span>
+                <span class="n">collectWhileInState</span><span class="p">(</span><span class="n">timerThatEmitsEverySecond</span><span class="p">())</span> <span class="p">{</span> <span class="n">value</span><span class="p">,</span> <span class="n">stateSnapshot</span> <span class="o">-&gt;</span>
+                    <span class="n">MutateState</span><span class="o">&lt;</span><span class="n">ErrorState</span><span class="p">,</span> <span class="n">State</span><span class="o">&gt;</span> <span class="p">{</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">countdownTimeLeft</span> <span class="o">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="c1">// this is referencing ErrorState</span>
+                            <span class="k">this</span><span class="p">.</span><span class="na">copy</span><span class="p">(</span><span class="n">countdown</span> <span class="o">=</span> <span class="n">countdownTimeLeft</span> <span class="o">-</span> <span class="m">1</span><span class="p">)</span>  <span class="c1">//  decrease the countdown by 1 second</span>
                         <span class="k">else</span>
                             <span class="n">LoadingState</span>  <span class="c1">// transition to the LoadingState</span>
                     <span class="p">}</span>
@@ -2332,17 +2322,16 @@ Let&rsquo; take a look at our example state machine:</p>
         <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">timerThatEmitsEverySecond</span><span class="p">():</span> <span class="n">Flow</span><span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;</span> <span class="p">=</span> <span class="n">flow</span> <span class="p">{</span>
-        <span class="k">var</span> <span class="py">timeElapsed</span> <span class="p">=</span> <span class="m">0</span>
+    <span class="kd">private</span> <span class="kd">fun</span> <span class="nf">timerThatEmitsEverySecond</span><span class="p">():</span> <span class="n">Flow</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span> <span class="o">=</span> <span class="n">flow</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nv">timeElapsed</span> <span class="o">=</span> <span class="m">0</span>
         <span class="k">while</span> <span class="p">(</span><span class="n">isActive</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// is Flow still active?</span>
             <span class="n">delay</span><span class="p">(</span><span class="m">1000</span><span class="p">)</span>     <span class="c1">// wait 1 second</span>
-            <span class="n">timeElapsed</span><span class="p">++</span>
+            <span class="n">timeElapsed</span><span class="o">++</span>
             <span class="n">emit</span><span class="p">(</span><span class="n">timeElapsed</span><span class="p">)</span> <span class="c1">// Flow Emits value</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>Do you notice something? With more blocks we add the state machine itself gets harder to read, understand and maintain.
 What we are aiming for with the DSL is an overview about what the state machine is supposed to do on a high level that
 reads like as specification. If you take a look at the example from above, however, you will notice that it isn&rsquo;t easy
@@ -2351,21 +2340,21 @@ to read and get bloated with implementation details.</p>
 <p>We recommend keeping the DSL really short, expressive, readable and maintainable. Therefore instead of having
 implementation details in your DSL we recommend to use function references instead. Let&rsquo;s refactor the example above to
 reflect this idea:</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
-    <span class="k">private</span> <span class="k">val</span> <span class="py">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
-<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="p">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="p">&gt;(</span><span class="n">initialState</span> <span class="p">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">MyStateMachine</span><span class="p">(</span>
+    <span class="kd">private</span> <span class="kd">val</span> <span class="nv">httpClient</span><span class="p">:</span> <span class="n">HttpClient</span>
+<span class="p">)</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="o">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="o">&gt;</span><span class="p">(</span><span class="n">initialState</span> <span class="o">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
 
     <span class="c1">//</span>
     <span class="c1">// This is the specification of your state machine. Less implementation details, better readability.</span>
     <span class="c1">//</span>
-    <span class="n">init</span> <span class="p">{</span>
+    <span class="k">init</span> <span class="p">{</span>
         <span class="n">spec</span> <span class="p">{</span>
-            <span class="n">inState</span><span class="p">&lt;</span><span class="n">LoadingState</span><span class="p">&gt;</span> <span class="p">{</span>
+            <span class="n">inState</span><span class="o">&lt;</span><span class="n">LoadingState</span><span class="o">&gt;</span> <span class="p">{</span>
                 <span class="n">onEnter</span><span class="p">(</span><span class="o">::</span><span class="n">loadItemsAndMoveToContentOrErrorState</span><span class="p">)</span>
             <span class="p">}</span>
 
-            <span class="n">inState</span><span class="p">&lt;</span><span class="n">ErrorState</span><span class="p">&gt;</span> <span class="p">{</span>
-                <span class="n">on</span><span class="p">&lt;</span><span class="n">RetryLoadingAction</span><span class="p">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">,</span> <span class="n">stateSnapshot</span> <span class="p">-&gt;</span>
+            <span class="n">inState</span><span class="o">&lt;</span><span class="n">ErrorState</span><span class="o">&gt;</span> <span class="p">{</span>
+                <span class="n">on</span><span class="o">&lt;</span><span class="n">RetryLoadingAction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">,</span> <span class="n">stateSnapshot</span> <span class="o">-&gt;</span>
                     <span class="c1">// For a single line statement it&#39;s ok to keep the block instead of moving to a function reference</span>
                     <span class="n">OverrideState</span><span class="p">(</span><span class="n">LoadingState</span><span class="p">)</span>
                 <span class="p">}</span>
@@ -2383,38 +2372,37 @@ reflect this idea:</p>
     <span class="c1">// All the implementation details are in the functions below.</span>
     <span class="c1">//</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">loadItemsAndMoveToContentOrErrorState</span><span class="p">(</span><span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">LoadingState</span><span class="p">):</span> <span class="n">ChangeState</span><span class="p">&lt;</span><span class="n">State</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kd">fun</span> <span class="nf">loadItemsAndMoveToContentOrErrorState</span><span class="p">(</span><span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">LoadingState</span><span class="p">):</span> <span class="n">ChangeState</span><span class="o">&lt;</span><span class="n">State</span><span class="o">&gt;</span> <span class="p">{</span>
         <span class="k">return</span> <span class="k">try</span> <span class="p">{</span>
-            <span class="k">val</span> <span class="py">items</span> <span class="p">=</span> <span class="n">httpClient</span><span class="p">.</span><span class="n">loadItems</span><span class="p">()</span>
+            <span class="kd">val</span> <span class="nv">items</span> <span class="o">=</span> <span class="n">httpClient</span><span class="p">.</span><span class="na">loadItems</span><span class="p">()</span>
             <span class="n">OverrideState</span><span class="p">(</span><span class="n">ShowContentState</span><span class="p">(</span><span class="n">items</span><span class="p">))</span>
         <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">t</span><span class="p">:</span> <span class="n">Throwable</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">OverrideState</span><span class="p">(</span><span class="n">ErrorState</span><span class="p">(</span><span class="n">cause</span> <span class="p">=</span> <span class="n">t</span><span class="p">,</span> <span class="n">countdown</span> <span class="p">=</span> <span class="m">3</span><span class="p">))</span> <span class="c1">// Countdown starts with 3 seconds</span>
+            <span class="n">OverrideState</span><span class="p">(</span><span class="n">ErrorState</span><span class="p">(</span><span class="n">cause</span> <span class="o">=</span> <span class="n">t</span><span class="p">,</span> <span class="n">countdown</span> <span class="o">=</span> <span class="m">3</span><span class="p">))</span> <span class="c1">// Countdown starts with 3 seconds</span>
         <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">onSecondElapsedMoveToLoadingStateOrDecrementCountdown</span><span class="p">(</span>
-        <span class="n">value</span><span class="p">:</span> <span class="n">Int</span><span class="p">,</span>
+    <span class="kd">private</span> <span class="kd">fun</span> <span class="nf">onSecondElapsedMoveToLoadingStateOrDecrementCountdown</span><span class="p">(</span>
+        <span class="n">value</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
         <span class="n">stateSnapshot</span><span class="p">:</span> <span class="n">ErrorState</span>
-    <span class="p">):</span> <span class="n">ChangeState</span><span class="p">&lt;</span><span class="n">State</span><span class="p">&gt;</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">MutateState</span><span class="p">&lt;</span><span class="n">ErrorState</span><span class="p">,</span> <span class="n">State</span><span class="p">&gt;</span> <span class="p">{</span>
-            <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">countdownTimeLeft</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="c1">// this is referencing ErrorState</span>
-                <span class="k">this</span><span class="p">.</span><span class="n">copy</span><span class="p">(</span><span class="n">countdown</span> <span class="p">=</span> <span class="n">countdownTimeLeft</span> <span class="p">-</span> <span class="m">1</span><span class="p">)</span>  <span class="c1">//  decrease the countdown by 1 second</span>
+    <span class="p">):</span> <span class="n">ChangeState</span><span class="o">&lt;</span><span class="n">State</span><span class="o">&gt;</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">MutateState</span><span class="o">&lt;</span><span class="n">ErrorState</span><span class="p">,</span> <span class="n">State</span><span class="o">&gt;</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">countdownTimeLeft</span> <span class="o">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="c1">// this is referencing ErrorState</span>
+                <span class="k">this</span><span class="p">.</span><span class="na">copy</span><span class="p">(</span><span class="n">countdown</span> <span class="o">=</span> <span class="n">countdownTimeLeft</span> <span class="o">-</span> <span class="m">1</span><span class="p">)</span>  <span class="c1">//  decrease the countdown by 1 second</span>
             <span class="k">else</span>
                 <span class="n">LoadingState</span>  <span class="c1">// transition to the LoadingState</span>
         <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">timerThatEmitsEverySecond</span><span class="p">():</span> <span class="n">Flow</span><span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;</span> <span class="p">=</span> <span class="n">flow</span> <span class="p">{</span>
-        <span class="k">var</span> <span class="py">timeElapsed</span> <span class="p">=</span> <span class="m">0</span>
+    <span class="kd">private</span> <span class="kd">fun</span> <span class="nf">timerThatEmitsEverySecond</span><span class="p">():</span> <span class="n">Flow</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span> <span class="o">=</span> <span class="n">flow</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nv">timeElapsed</span> <span class="o">=</span> <span class="m">0</span>
         <span class="k">while</span> <span class="p">(</span><span class="n">isActive</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// is Flow still active?</span>
             <span class="n">delay</span><span class="p">(</span><span class="m">1000</span><span class="p">)</span>     <span class="c1">// wait 1 second</span>
-            <span class="n">timeElapsed</span><span class="p">++</span>
+            <span class="n">timeElapsed</span><span class="o">++</span>
             <span class="n">emit</span><span class="p">(</span><span class="n">timeElapsed</span><span class="p">)</span> <span class="c1">// Flow Emits value</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>By using function references you can read the DSL better and can zoom in into implementation details anytime you want to
 by looking into a function body.</p>
                 
@@ -2427,45 +2415,46 @@ by looking into a function body.</p>
             </article>
           </div>
         </div>
+        
       </main>
       
         
 <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
         
-          <a href="../contributing/" title="Contributing" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <a href="../contributing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Contributing" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Contributing
             </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Contributing
-              </div>
-            </div>
-          </a>
+          </div>
+        </a>
+      
+      
         
-        
-          <a href="../flow_vs_FlowReduxStateMachine/" title="FlowReduxStateMachine vs .reduxStore()" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                FlowReduxStateMachine vs .reduxStore()
-              </div>
+        <a href="../flow_vs_FlowReduxStateMachine/" class="md-footer__link md-footer__link--next" aria-label="Next: FlowReduxStateMachine vs .reduxStore()" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              FlowReduxStateMachine vs .reduxStore()
             </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -2479,6 +2468,7 @@ by looking into a function body.</p>
         <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
           Material for MkDocs
         </a>
+        
       </div>
       
     </div>
@@ -2486,19 +2476,13 @@ by looking into a function body.</p>
 </footer>
       
     </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.b0710199.min.js", "version": null}</script>
     
-      <script src="../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
-      
-      <script>
-        app = initialize({
-          base: "..",
-          features: [],
-          search: Object.assign({
-            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
-          }, typeof search !== "undefined" && search)
-        })
-      </script>
+    
+      <script src="../assets/javascripts/bundle.76f349be.min.js"></script>
       
     
   </body>

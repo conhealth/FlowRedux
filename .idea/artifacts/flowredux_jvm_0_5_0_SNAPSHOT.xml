@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="flowredux-jvm-0.5.0-SNAPSHOT">
-    <output-path>$PROJECT_DIR$/flowredux/build/libs</output-path>
-    <root id="archive" name="flowredux-jvm-0.5.0-SNAPSHOT.jar">
-      <element id="module-output" name="FlowRedux.flowredux.jvmMain" />
-    </root>
-  </artifact>
-</component>
