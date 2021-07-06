@@ -2,267 +2,267 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://freeletics.github.io/FlowRedux/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/contributing/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/dsl/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/flow_vs_FlowReduxStateMachine/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/multiplatform/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/reduce/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/redux-store/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-change-state/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-c-o-n-c-a-t/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-c-o-n-c-a-t/name/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-c-o-n-c-a-t/ordinal/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-l-a-t-e-s-t/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-l-a-t-e-s-t/name/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-l-a-t-e-s-t/ordinal/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-m-e-r-g-e/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-m-e-r-g-e/name/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-m-e-r-g-e/ordinal/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/-flow-redux-state-machine/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/dispatch/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/state/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/-flow-redux-store-builder/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/builder-blocks/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/collect-while-in-any-state/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/in-state-with-condition/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/in-state/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/-in-state-builder-block/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/_in-state-side-effect-builders/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/_is-in-state/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/collect-while-in-state/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/on-enter/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/on/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-side-effect-builder/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-mutate-state/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-mutate-state/-mutate-state/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-no-state-change/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-action-in-state-side-effect-builder/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-action-in-state-side-effect-builder/-on-action-in-state-side-effect-builder/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-enter-in-state-side-effect-builder/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-enter-in-state-side-effect-builder/-on-enter-in-state-side-effect-builder/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-override-state/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-override-state/-override-state/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-store-wide-builder-block/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/flowredux/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/flowredux/flowredux/com.freeletics.flowredux/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/flowredux/flowredux/com.freeletics.flowredux/redux-store/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/flowredux/flowredux/com.freeletics.flowredux/-flow-redux-logger/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/flowredux/flowredux/com.freeletics.flowredux/-flow-redux-logger/log/</loc>
-         <lastmod>2021-06-26</lastmod>
+         <lastmod>2021-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
