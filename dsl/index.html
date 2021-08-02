@@ -2302,10 +2302,9 @@ could complete before the first execution (because using a random time of waitin
 <li><code>CONCAT</code>: In contrast to <code>MERGE</code> and <code>LATEST</code> <code>CONCAT</code> will not run <code>on&lt;BarAction&gt;</code> in parallel and will not cancel
   any previous execution. Instead, <code>CONCAT</code> will preserve the order and execute one block after another.</li>
 </ul>
-<p>All execution blocks can specify a <code>FlatMapPolicy</code>:</p>
+<p>All execution blocks except <code>onEnter</code> can specify a <code>FlatMapPolicy</code>:</p>
 <ul>
 <li><code>on&lt;Action&gt;(flatMapPolicy = FlatMapPolicy.LATEST){... }</code></li>
-<li><code>onEnter(flatMapPolicy = FlatMapPolicy.LATEST) { ... }</code></li>
 <li><code>collectWhileInState(flatMapPolicy = FlatMapPolicy.LATEST) { ... }</code></li>
 </ul>
 <h2 id="best-practice">Best Practice<a class="headerlink" href="#best-practice" title="Permanent link">&para;</a></h2>
