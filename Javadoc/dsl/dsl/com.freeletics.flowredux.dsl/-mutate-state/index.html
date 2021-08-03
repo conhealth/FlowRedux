@@ -1606,7 +1606,8 @@
                 
                 <p>//<a href="../../../">dsl</a>/<a href="../">com.freeletics.flowredux.dsl</a>/<a href="./">MutateState</a></p>
 <h1 id="mutatestate">MutateState<a class="headerlink" href="#mutatestate" title="Permanent link">&para;</a></h1>
-<p>[common] class <a href="./">MutateState</a>&lt;<a href="./">InputState</a> : <a href="./">S</a>, <a href="./">S</a>&gt;(<strong>reducer</strong>: <a href="./">InputState</a>.() -&gt; <a href="./">S</a>) : <a href="../-change-state/">ChangeState</a>&lt;<a href="./">S</a>&gt; </p>
+<p>[common]\
+class <a href="./">MutateState</a>&lt;<a href="./">InputState</a> : <a href="./">S</a>, <a href="./">S</a>&gt;(<strong>reducer</strong>: <a href="./">InputState</a>.() -&gt; <a href="./">S</a>) : <a href="../-change-state/">ChangeState</a>&lt;<a href="./">S</a>&gt; </p>
 <p>Use this function if you want to &ldquo;mutate&rdquo; the current state by copying the old state and modify some properties in the copy of the new state. A common use case is to call .copy() on your state defined as data class.</p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">&para;</a></h2>
 <table>
@@ -1618,8 +1619,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a name="com.freeletics.flowredux.dsl/MutateState/MutateState/#kotlin.Function1[TypeParam(bounds=[TypeParam(bounds=[kotlin.Any?])]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/"></a><a href="-mutate-state/">MutateState</a></td>
-<td><a name="com.freeletics.flowredux.dsl/MutateState/MutateState/#kotlin.Function1[TypeParam(bounds=[TypeParam(bounds=[kotlin.Any?])]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/"></a> [common] fun &lt;<a href="./">InputState</a> : <a href="./">S</a>, <a href="./">S</a>&gt; <a href="-mutate-state/">MutateState</a>(reducer: <a href="./">InputState</a>.() -&gt; <a href="./">S</a>)   <br></td>
+<td><a href="-mutate-state/">MutateState</a></td>
+<td>[common]<br>fun &lt;<a href="./">InputState</a> : <a href="./">S</a>, <a href="./">S</a>&gt; <a href="-mutate-state/">MutateState</a>(reducer: <a href="./">InputState</a>.() -&gt; <a href="./">S</a>)</td>
 </tr>
 </tbody>
 </table>

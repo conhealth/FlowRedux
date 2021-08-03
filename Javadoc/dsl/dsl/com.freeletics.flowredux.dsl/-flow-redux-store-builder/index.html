@@ -1620,9 +1620,10 @@
                 
                 <p>//<a href="../../../">dsl</a>/<a href="../">com.freeletics.flowredux.dsl</a>/<a href="./">FlowReduxStoreBuilder</a></p>
 <h1 id="flowreduxstorebuilder">FlowReduxStoreBuilder<a class="headerlink" href="#flowreduxstorebuilder" title="Permanent link">&para;</a></h1>
-<p>[common] @FlowPreview()<br />
-@ExperimentalCoroutinesApi()  </p>
-<p>class <a href="./">FlowReduxStoreBuilder</a>&lt;<a href="./">S</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, <a href="./">A</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt;   </p>
+<p>[common]\
+@FlowPreview()</p>
+<p>@ExperimentalCoroutinesApi()</p>
+<p>class <a href="./">FlowReduxStoreBuilder</a>&lt;<a href="./">S</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, <a href="./">A</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt;</p>
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1633,12 +1634,12 @@
 </thead>
 <tbody>
 <tr>
-<td><a name="com.freeletics.flowredux.dsl/FlowReduxStoreBuilder/inState/#kotlin.Function1[com.freeletics.flowredux.dsl.InStateBuilderBlock[TypeParam(bounds=[TypeParam(bounds=[kotlin.Any])]),TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])],kotlin.Unit]/PointingToDeclaration/"></a><a href="in-state/">inState</a></td>
-<td><a name="com.freeletics.flowredux.dsl/FlowReduxStoreBuilder/inState/#kotlin.Function1[com.freeletics.flowredux.dsl.InStateBuilderBlock[TypeParam(bounds=[TypeParam(bounds=[kotlin.Any])]),TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])],kotlin.Unit]/PointingToDeclaration/"></a>[common]  <br>Content  <br>inline fun &lt;<a href="in-state/">SubState</a> : <a href="./">S</a>&gt; <a href="in-state/">inState</a>(noinline block: <a href="../-in-state-builder-block/">InStateBuilderBlock</a>&lt;<a href="in-state/">SubState</a>, <a href="./">S</a>, <a href="./">A</a>&gt;.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)  <br>More info  <br>Define what happens if the store is in a certain state.  <br><br><br>[common]  <br>Content  <br>inline fun &lt;<a href="in-state/">SubState</a> : <a href="./">S</a>&gt; <a href="in-state/">inState</a>(noinline additionalIsInState: (<a href="in-state/">SubState</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, noinline block: <a href="../-in-state-builder-block/">InStateBuilderBlock</a>&lt;<a href="in-state/">SubState</a>, <a href="./">S</a>, <a href="./">A</a>&gt;.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)  <br>More info  <br>This variation allows you to specify is a mix between inferring the condition of the generic function type and additionally can specify and ADDITIONAL condition that also must be true in addition to the check that the type as specified as generic fun parameter is an instance of the current state.  <br><br><br></td>
+<td><a href="in-state/">inState</a></td>
+<td>[common]<br>inline fun &lt;<a href="in-state/">SubState</a> : <a href="./">S</a>&gt; <a href="in-state/">inState</a>(noinline block: <a href="../-in-state-builder-block/">InStateBuilderBlock</a>&lt;<a href="in-state/">SubState</a>, <a href="./">S</a>, <a href="./">A</a>&gt;.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)<br>Define what happens if the store is in a certain state.<br>[common]<br>inline fun &lt;<a href="in-state/">SubState</a> : <a href="./">S</a>&gt; <a href="in-state/">inState</a>(noinline additionalIsInState: (<a href="in-state/">SubState</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, noinline block: <a href="../-in-state-builder-block/">InStateBuilderBlock</a>&lt;<a href="in-state/">SubState</a>, <a href="./">S</a>, <a href="./">A</a>&gt;.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)<br>This variation allows you to specify is a mix between inferring the condition of the generic function type and additionally can specify and ADDITIONAL condition that also must be true in addition to the check that the type as specified as generic fun parameter is an instance of the current state.</td>
 </tr>
 <tr>
-<td><a name="com.freeletics.flowredux.dsl/FlowReduxStoreBuilder/inStateWithCondition/#kotlin.Function1[TypeParam(bounds=[kotlin.Any]),kotlin.Boolean]#kotlin.Function1[com.freeletics.flowredux.dsl.InStateBuilderBlock[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])],kotlin.Unit]/PointingToDeclaration/"></a><a href="in-state-with-condition/">inStateWithCondition</a></td>
-<td><a name="com.freeletics.flowredux.dsl/FlowReduxStoreBuilder/inStateWithCondition/#kotlin.Function1[TypeParam(bounds=[kotlin.Any]),kotlin.Boolean]#kotlin.Function1[com.freeletics.flowredux.dsl.InStateBuilderBlock[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])],kotlin.Unit]/PointingToDeclaration/"></a>[common]  <br>Content  <br>fun <a href="in-state-with-condition/">inStateWithCondition</a>(isInState: (<a href="./">S</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, block: <a href="../-in-state-builder-block/">InStateBuilderBlock</a>&lt;<a href="./">S</a>, <a href="./">S</a>, <a href="./">A</a>&gt;.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)  <br>More info  <br>Define what happens if the store is in a certain state.  <br><br><br></td>
+<td><a href="in-state-with-condition/">inStateWithCondition</a></td>
+<td>[common]<br>fun <a href="in-state-with-condition/">inStateWithCondition</a>(isInState: (<a href="./">S</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, block: <a href="../-in-state-builder-block/">InStateBuilderBlock</a>&lt;<a href="./">S</a>, <a href="./">S</a>, <a href="./">A</a>&gt;.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)<br>Define what happens if the store is in a certain state.</td>
 </tr>
 </tbody>
 </table>
@@ -1652,8 +1653,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a name="com.freeletics.flowredux.dsl/FlowReduxStoreBuilder/builderBlocks/#/PointingToDeclaration/"></a><a href="builder-blocks/">builderBlocks</a></td>
-<td><a name="com.freeletics.flowredux.dsl/FlowReduxStoreBuilder/builderBlocks/#/PointingToDeclaration/"></a> [common] val <a href="builder-blocks/">builderBlocks</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<a href="../-store-wide-builder-block/">StoreWideBuilderBlock</a>&lt;<a href="./">S</a>, <a href="./">A</a>&gt;&gt;   <br></td>
+<td><a href="builder-blocks/">builderBlocks</a></td>
+<td>[common]<br>val <a href="builder-blocks/">builderBlocks</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<a href="../-store-wide-builder-block/">StoreWideBuilderBlock</a>&lt;<a href="./">S</a>, <a href="./">A</a>&gt;&gt;</td>
 </tr>
 </tbody>
 </table>

@@ -1620,9 +1620,10 @@
                 
                 <p>//<a href="../../../">dsl</a>/<a href="../">com.freeletics.flowredux.dsl</a>/<a href="./">FlowReduxStateMachine</a></p>
 <h1 id="flowreduxstatemachine">FlowReduxStateMachine<a class="headerlink" href="#flowreduxstatemachine" title="Permanent link">&para;</a></h1>
-<p>[common] @FlowPreview()<br />
-@ExperimentalCoroutinesApi()  </p>
-<p>abstract class <a href="./">FlowReduxStateMachine</a>&lt;<a href="./">S</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, <a href="./">A</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt;(<strong>initialState</strong>: <a href="./">S</a>, <strong>scope</strong>: CoroutineScope, <strong>logger</strong>: FlowReduxLogger?) : StateMachine&lt;<a href="./">S</a>, <a href="./">A</a>&gt;    </p>
+<p>[common]\
+@FlowPreview()</p>
+<p>@ExperimentalCoroutinesApi()</p>
+<p>abstract class <a href="./">FlowReduxStateMachine</a>&lt;<a href="./">S</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, <a href="./">A</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt;(<strong>initialState</strong>: <a href="./">S</a>, <strong>scope</strong>: CoroutineScope, <strong>logger</strong>: FlowReduxLogger?) : StateMachine&lt;<a href="./">S</a>, <a href="./">A</a>&gt;</p>
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1633,8 +1634,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a name="com.freeletics.flowredux.dsl/FlowReduxStateMachine/dispatch/#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/"></a><a href="dispatch/">dispatch</a></td>
-<td><a name="com.freeletics.flowredux.dsl/FlowReduxStateMachine/dispatch/#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/"></a>[common]  <br>Content  <br>open suspend override fun <a href="dispatch/">dispatch</a>(action: <a href="./">A</a>)  <br><br><br></td>
+<td><a href="dispatch/">dispatch</a></td>
+<td>[common]<br>open suspend override fun <a href="dispatch/">dispatch</a>(action: <a href="./">A</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -1648,8 +1649,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a name="com.freeletics.flowredux.dsl/FlowReduxStateMachine/state/#/PointingToDeclaration/"></a><a href="state/">state</a></td>
-<td><a name="com.freeletics.flowredux.dsl/FlowReduxStateMachine/state/#/PointingToDeclaration/"></a> [common] open override val <a href="state/">state</a>: StateFlow&lt;<a href="./">S</a>&gt;   <br></td>
+<td><a href="state/">state</a></td>
+<td>[common]<br>open override val <a href="state/">state</a>: StateFlow&lt;<a href="./">S</a>&gt;</td>
 </tr>
 </tbody>
 </table>

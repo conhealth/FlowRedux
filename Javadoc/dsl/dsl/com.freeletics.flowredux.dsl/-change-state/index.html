@@ -1620,7 +1620,8 @@
                 
                 <p>//<a href="../../../">dsl</a>/<a href="../">com.freeletics.flowredux.dsl</a>/<a href="./">ChangeState</a></p>
 <h1 id="changestate">ChangeState<a class="headerlink" href="#changestate" title="Permanent link">&para;</a></h1>
-<p>[common] sealed class <a href="./">ChangeState</a><out <a href="index.md">S</a>></p>
+<p>[common]\
+sealed class <a href="./">ChangeState</a><out <a href="index.md">S</a>></p>
 <p>Represents a state transition. Either use</p>
 <ul><li>[MutateState](../-mutate-state/index.md) to mutate the current state. You get a lambda block with the current state as input and expects the next state as output.</li><li>[OverrideState](../-override-state/index.md) to trigger a transition from one state to the next one by simply overriding whatever state was there before. Be careful using this especially if you have handle multiple actions or collect flows within the same state as it really overrides the full state and you may loose information or partial state changes triggered by them. Use [MutateState](../-mutate-state/index.md) in that case.</li><li>[NoStateChange](../-no-state-change/index.md) to indicate that this function did not change the state at all. There should be only very little use case for [NoStateChange](../-no-state-change/index.md). So only use it if you actually know what you do.</li></ul>
 
@@ -1634,13 +1635,13 @@
 </thead>
 <tbody>
 <tr>
-<td><a name="com.freeletics.flowredux.dsl/OverrideState///PointingToDeclaration/"></a><a href="../-override-state/">OverrideState</a></td>
+<td><a href="../-override-state/">OverrideState</a></td>
 </tr>
 <tr>
-<td><a name="com.freeletics.flowredux.dsl/MutateState///PointingToDeclaration/"></a><a href="../-mutate-state/">MutateState</a></td>
+<td><a href="../-mutate-state/">MutateState</a></td>
 </tr>
 <tr>
-<td><a name="com.freeletics.flowredux.dsl/NoStateChange///PointingToDeclaration/"></a><a href="../-no-state-change/">NoStateChange</a></td>
+<td><a href="../-no-state-change/">NoStateChange</a></td>
 </tr>
 </tbody>
 </table>
@@ -1654,8 +1655,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a name="com.freeletics.flowredux.dsl//reduce/com.freeletics.flowredux.dsl.ChangeState[TypeParam(bounds=[kotlin.Any?])]#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/"></a><a href="../reduce/">reduce</a></td>
-<td><a name="com.freeletics.flowredux.dsl//reduce/com.freeletics.flowredux.dsl.ChangeState[TypeParam(bounds=[kotlin.Any?])]#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/"></a>[common]  <br>Content  <br>fun &lt;<a href="../reduce/">S</a>&gt; <a href="./">ChangeState</a>&lt;<a href="../reduce/">S</a>&gt;.<a href="../reduce/">reduce</a>(state: <a href="../reduce/">S</a>): <a href="../reduce/">S</a>  <br><br><br></td>
+<td><a href="../reduce/">reduce</a></td>
+<td>[common]<br>fun &lt;<a href="../reduce/">S</a>&gt; <a href="./">ChangeState</a>&lt;<a href="../reduce/">S</a>&gt;.<a href="../reduce/">reduce</a>(state: <a href="../reduce/">S</a>): <a href="../reduce/">S</a></td>
 </tr>
 </tbody>
 </table>
