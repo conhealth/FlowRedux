@@ -1562,7 +1562,25 @@
                 <p>//<a href="../../../../">dsl</a>/<a href="../../">com.freeletics.flowredux.dsl</a>/<a href="../">InStateBuilderBlock</a>/<a href="./">collectWhileInState</a></p>
 <h1 id="collectwhileinstate">collectWhileInState<a class="headerlink" href="#collectwhileinstate" title="Permanent link">&para;</a></h1>
 <p>[common]\
-fun &lt;<a href="./">T</a>&gt; <a href="./">collectWhileInState</a>(flow: Flow&lt;<a href="./">T</a>&gt;, flatMapPolicy: <a href="../../-flat-map-policy/">FlatMapPolicy</a> = FlatMapPolicy.CONCAT, block: <a href="../../#-834782443%2FClasslikes%2F-1936522656">InStateObserverBlock</a>&lt;<a href="./">T</a>, <a href="../">InputState</a>, <a href="../">S</a>&gt;)</p>
+fun &lt;<a href="./">T</a>&gt; <a href="./">collectWhileInState</a>(flow: Flow&lt;<a href="./">T</a>&gt;, handler: <a href="../../#-584034632%2FClasslikes%2F-1936522656">InStateObserverHandler</a>&lt;<a href="./">T</a>, <a href="../">InputState</a>, <a href="../">S</a>&gt;)</p>
+<p>Triggers every time the state machine enters this state. The passed <a href="./">flow</a> will be collected and any emission will be passed to <a href="./">handler</a>.</p>
+<p>The collection as well as any ongoing <a href="./">handler</a> is cancelled when leaving this state.</p>
+<p><a href="./">handler</a> will only be called for a new emission from <a href="./">flow</a> after a previous <a href="./">handler</a> invocation completed.</p>
+<p>[common]\
+fun &lt;<a href="./">T</a>&gt; <a href="./">collectWhileInState</a>(flow: Flow&lt;<a href="./">T</a>&gt;, flatMapPolicy: <a href="../../-flat-map-policy/">FlatMapPolicy</a>, handler: <a href="../../#-584034632%2FClasslikes%2F-1936522656">InStateObserverHandler</a>&lt;<a href="./">T</a>, <a href="../">InputState</a>, <a href="../">S</a>&gt;)</p>
+<p>Triggers every time the state machine enters this state. The passed <a href="./">flow</a> will be collected and any emission will be passed to <a href="./">handler</a>.</p>
+<p>The collection as well as any ongoing <a href="./">handler</a> is cancelled when leaving this state.</p>
+<p><a href="./">flatMapPolicy</a> is used to determine the behavior when a new emission from <a href="./">flow</a> arrives before the previous <a href="./">handler</a> invocation completed.</p>
+<p>[common]\
+fun &lt;<a href="./">T</a>&gt; <a href="./">collectWhileInState</a>(flowBuilder: (Flow&lt;<a href="../">InputState</a>&gt;) -&gt; Flow&lt;<a href="./">T</a>&gt;, handler: <a href="../../#-584034632%2FClasslikes%2F-1936522656">InStateObserverHandler</a>&lt;<a href="./">T</a>, <a href="../">InputState</a>, <a href="../">S</a>&gt;)</p>
+<p>Triggers every time the state machine enters this state. <a href="./">flowBuilder</a> will get a Flow that emits the current <a href="../">InputState</a> and any change to it. The transformed Flow that <a href="./">flowBuilder</a> returns will be collected and any emission will be passed to <a href="./">handler</a>.</p>
+<p>The collection as well as any ongoing <a href="./">handler</a> is cancelled when leaving this state.</p>
+<p><a href="./">handler</a> will only be called for a new emission from <a href="./">flowBuilder</a>&lsquo;s Flow after a previous <a href="./">handler</a> invocation completed.</p>
+<p>[common]\
+fun &lt;<a href="./">T</a>&gt; <a href="./">collectWhileInState</a>(flowBuilder: (Flow&lt;<a href="../">InputState</a>&gt;) -&gt; Flow&lt;<a href="./">T</a>&gt;, flatMapPolicy: <a href="../../-flat-map-policy/">FlatMapPolicy</a>, handler: <a href="../../#-584034632%2FClasslikes%2F-1936522656">InStateObserverHandler</a>&lt;<a href="./">T</a>, <a href="../">InputState</a>, <a href="../">S</a>&gt;)</p>
+<p>Triggers every time the state machine enters this state. <a href="./">flowBuilder</a> will get a Flow that emits the current <a href="../">InputState</a> and any change to it. The transformed Flow that <a href="./">flowBuilder</a> returns will be collected and any emission will be passed to <a href="./">handler</a>.</p>
+<p>The collection as well as any ongoing <a href="./">handler</a> is cancelled when leaving this state.</p>
+<p><a href="./">flatMapPolicy</a> is used to determine the behavior when a new emission from <a href="./">flowBuilder</a>&lsquo;s Flow arrives before the previous <a href="./">handler</a> invocation completed.</p>
                 
               
               

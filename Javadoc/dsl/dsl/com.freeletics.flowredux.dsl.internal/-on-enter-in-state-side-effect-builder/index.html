@@ -1607,7 +1607,7 @@
                 <p>//<a href="../../../">dsl</a>/<a href="../">com.freeletics.flowredux.dsl.internal</a>/<a href="./">OnEnterInStateSideEffectBuilder</a></p>
 <h1 id="onenterinstatesideeffectbuilder">OnEnterInStateSideEffectBuilder<a class="headerlink" href="#onenterinstatesideeffectbuilder" title="Permanent link">&para;</a></h1>
 <p>[common]\
-class <a href="./">OnEnterInStateSideEffectBuilder</a>&lt;<a href="./">InputState</a> : <a href="./">S</a>, <a href="./">S</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, <a href="./">A</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt;(<strong>isInState</strong>: (<a href="./">S</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, <strong>block</strong>: <a href="../#2068886867%2FClasslikes%2F-1936522656">InStateOnEnterBlock</a>&lt;<a href="./">InputState</a>, <a href="./">S</a>&gt;) : <a href="../-in-state-side-effect-builder/">InStateSideEffectBuilder</a>&lt;<a href="./">InputState</a>, <a href="./">S</a>, <a href="./">A</a>&gt; </p>
+class <a href="./">OnEnterInStateSideEffectBuilder</a>&lt;<a href="./">InputState</a> : <a href="./">S</a>, <a href="./">S</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, <a href="./">A</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt;(<strong>isInState</strong>: (<a href="./">S</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, <strong>handler</strong>: <a href="../#-1886570122%2FClasslikes%2F-1936522656">InStateOnEnterHandler</a>&lt;<a href="./">InputState</a>, <a href="./">S</a>&gt;) : <a href="../-in-state-side-effect-builder/">InStateSideEffectBuilder</a>&lt;<a href="./">InputState</a>, <a href="./">S</a>, <a href="./">A</a>&gt; </p>
 <p>A builder that generates a SideEffect that triggers every time the state machine enters a certain state.</p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">&para;</a></h2>
 <table>
@@ -1620,7 +1620,7 @@ class <a href="./">OnEnterInStateSideEffectBuilder</a>&lt;<a href="./">InputStat
 <tbody>
 <tr>
 <td><a href="-on-enter-in-state-side-effect-builder/">OnEnterInStateSideEffectBuilder</a></td>
-<td>[common]<br>fun &lt;<a href="./">S</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <a href="-on-enter-in-state-side-effect-builder/">OnEnterInStateSideEffectBuilder</a>(isInState: (<a href="./">S</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, block: <a href="../#2068886867%2FClasslikes%2F-1936522656">InStateOnEnterBlock</a>&lt;<a href="./">InputState</a>, <a href="./">S</a>&gt;)</td>
+<td>[common]<br>fun &lt;<a href="./">S</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <a href="-on-enter-in-state-side-effect-builder/">OnEnterInStateSideEffectBuilder</a>(isInState: (<a href="./">S</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, handler: <a href="../#-1886570122%2FClasslikes%2F-1936522656">InStateOnEnterHandler</a>&lt;<a href="./">InputState</a>, <a href="./">S</a>&gt;)</td>
 </tr>
 </tbody>
 </table>

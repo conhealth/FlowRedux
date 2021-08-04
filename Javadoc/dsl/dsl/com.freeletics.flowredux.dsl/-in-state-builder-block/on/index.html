@@ -1562,7 +1562,13 @@
                 <p>//<a href="../../../../">dsl</a>/<a href="../../">com.freeletics.flowredux.dsl</a>/<a href="../">InStateBuilderBlock</a>/<a href="./">on</a></p>
 <h1 id="on">on<a class="headerlink" href="#on" title="Permanent link">&para;</a></h1>
 <p>[common]\
-inline fun &lt;<a href="./">SubAction</a> : <a href="../">A</a>&gt; <a href="./">on</a>(flatMapPolicy: <a href="../../-flat-map-policy/">FlatMapPolicy</a> = FlatMapPolicy.LATEST, noinline block: <a href="../../../com.freeletics.flowredux.dsl.internal/#426858907%2FClasslikes%2F-1936522656">OnActionBlock</a>&lt;<a href="../">InputState</a>, <a href="../">S</a>, <a href="./">SubAction</a>&gt;)</p>
+inline fun &lt;<a href="./">SubAction</a> : <a href="../">A</a>&gt; <a href="./">on</a>(noinline handler: <a href="../../../com.freeletics.flowredux.dsl.internal/#672525246%2FClasslikes%2F-1936522656">OnActionHandler</a>&lt;<a href="../">InputState</a>, <a href="../">S</a>, <a href="./">SubAction</a>&gt;)</p>
+<p>Triggers every time an action of type <a href="./">SubAction</a> is dispatched while the state machine is in this state.</p>
+<p>An ongoing <a href="./">handler</a> is cancelled when leaving this state or when a new <a href="./">SubAction</a> is dispatched.</p>
+<p>[common]\
+inline fun &lt;<a href="./">SubAction</a> : <a href="../">A</a>&gt; <a href="./">on</a>(flatMapPolicy: <a href="../../-flat-map-policy/">FlatMapPolicy</a>, noinline handler: <a href="../../../com.freeletics.flowredux.dsl.internal/#672525246%2FClasslikes%2F-1936522656">OnActionHandler</a>&lt;<a href="../">InputState</a>, <a href="../">S</a>, <a href="./">SubAction</a>&gt;)</p>
+<p>Triggers every time an action of type <a href="./">SubAction</a> is dispatched while the state machine is in this state.</p>
+<p>An ongoing <a href="./">handler</a> is cancelled when leaving this state. <a href="./">flatMapPolicy</a> is used to determine the behavior when a new <a href="./">SubAction</a> is dispatched while the previous <a href="./">handler</a> execution is still ongoing.</p>
                 
               
               
