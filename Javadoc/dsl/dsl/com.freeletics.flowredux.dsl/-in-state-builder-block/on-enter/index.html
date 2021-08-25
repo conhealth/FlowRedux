@@ -926,8 +926,44 @@
   
   
     <li class="md-nav__item">
+      <a href="../collect-while-in-state-effect/" class="md-nav__link">
+        Collect while in state effect
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../collect-while-in-state/" class="md-nav__link">
         Collect while in state
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../on-action-effect/" class="md-nav__link">
+        On action effect
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../on-enter-effect/" class="md-nav__link">
+        On enter effect
       </a>
     </li>
   
@@ -1563,7 +1599,7 @@
 <h1 id="onenter">onEnter<a class="headerlink" href="#onenter" title="Permanent link">&para;</a></h1>
 <p>[common]\
 fun <a href="./">onEnter</a>(handler: <a href="../../../com.freeletics.flowredux.dsl.internal/#-1886570122%2FClasslikes%2F-1936522656">InStateOnEnterHandler</a>&lt;<a href="../">InputState</a>, <a href="../">S</a>&gt;)</p>
-<p>Triggers every time the state machine enters this state.</p>
+<p>Triggers every time the state machine enters this state. It only triggers again if the surrounding in<State> condition is met and will only re-trigger if in<State> condition returned false and then true again.</p>
 <p>An ongoing <a href="./">handler</a> is cancelled when leaving this state.</p>
                 
               
@@ -1584,7 +1620,7 @@ fun <a href="./">onEnter</a>(handler: <a href="../../../com.freeletics.flowredux
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../collect-while-in-state/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Collect while in state" rel="prev">
+        <a href="../on-enter-effect/" class="md-footer__link md-footer__link--prev" aria-label="Previous: On enter effect" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1593,7 +1629,7 @@ fun <a href="./">onEnter</a>(handler: <a href="../../../com.freeletics.flowredux
               <span class="md-footer__direction">
                 Previous
               </span>
-              Collect while in state
+              On enter effect
             </div>
           </div>
         </a>

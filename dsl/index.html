@@ -349,6 +349,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#effects" class="md-nav__link">
+    Effects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#custom-condition-for-instate" class="md-nav__link">
     Custom condition for inState
   </a>
@@ -1065,8 +1072,44 @@
   
   
     <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/collect-while-in-state-effect/" class="md-nav__link">
+        Collect while in state effect
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/collect-while-in-state/" class="md-nav__link">
         Collect while in state
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/on-action-effect/" class="md-nav__link">
+        On action effect
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/on-enter-effect/" class="md-nav__link">
+        On enter effect
       </a>
     </li>
   
@@ -1755,6 +1798,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#effects" class="md-nav__link">
+    Effects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#custom-condition-for-instate" class="md-nav__link">
     Custom condition for inState
   </a>
@@ -2148,6 +2198,37 @@ call <code>collectWhileInState(timer) { ... }</code> to collect the Flow&rsquo;s
 <code>ErrorState</code> into another state. This happens either when the user clicks on the retry button and which
 triggers <code>on&lt;RetryLoadingAction&gt;</code> which causes a state transition to <code>LoadingState</code> or when 3 seconds have elapsed
 because then the defined <code>MutateState</code> causes a transitions to <code>LoadingState</code>.</p>
+<h2 id="effects">Effects<a class="headerlink" href="#effects" title="Permanent link">&para;</a></h2>
+<p>If you don&rsquo;t want to change the state but do some work without changing the state i.e. logging,
+triggering google analytics or trigger navigation then Effects is what you are looking for.</p>
+<p>The following counterparts to <code>on&lt;Action&gt;</code>, <code>onEnter</code> and <code>collectWhileInState</code> exists:
+- <code>onActionEffect&lt;Action&gt;</code>: Like <code>on&lt;Action&gt;</code> this triggers whenever the described Action is dispatched.
+- <code>onEnterEffect</code>: Like <code>onEnter</code> this triggers whenever you enter the state.
+- <code>collectWhileInStateEffect</code>: Like <code>collectWhileInState</code> this is used to collect a <code>Flow</code>.</p>
+<p>Effects behave the same way as their counterparts, i.e. cancelation etc. works just the same way as described in the section of <code>on&lt;Action&gt;</code>, <code>onEnter</code> and <code>collectWhileInState</code>.Effects</p>
+<p>Usage:
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">MyStateMachine</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="o">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="o">&gt;</span><span class="p">(</span><span class="n">initialState</span> <span class="o">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="k">init</span> <span class="p">{</span>
+        <span class="n">spec</span> <span class="p">{</span>
+            <span class="n">inState</span><span class="o">&lt;</span><span class="n">ShowContentState</span><span class="o">&gt;</span> <span class="p">{</span>
+               <span class="n">onEnterEffect</span> <span class="p">{</span> <span class="n">stateSnapshot</span> <span class="o">-&gt;</span>
+                   <span class="n">logMessage</span><span class="p">(</span><span class="s">&quot;Did enter </span><span class="si">$</span><span class="n">state</span><span class="s">&quot;</span><span class="p">)</span> <span class="c1">// note there is no state change</span>
+               <span class="p">}</span>
+
+               <span class="n">onActionEffect</span><span class="o">&lt;</span><span class="n">ButtonClickedAction</span><span class="o">&gt;</span> <span class="p">{</span> <span class="n">action</span><span class="p">,</span> <span class="n">stateSnapshot</span> <span class="o">-&gt;</span>
+                    <span class="n">analyticsTracker</span><span class="p">.</span><span class="na">track</span><span class="p">(</span><span class="n">ButtonClickedEvent</span><span class="p">())</span> <span class="c1">// note there is no state change</span>
+               <span class="p">}</span>
+
+               <span class="n">collectWhileInStateEffect</span><span class="p">(</span><span class="n">someFlow</span><span class="p">)</span> <span class="p">{</span><span class="n">value</span><span class="p">,</span> <span class="n">stateSnapshot</span> <span class="o">-&gt;</span>
+                    <span class="n">logMessage</span><span class="p">(</span><span class="s">&quot;Collected </span><span class="si">$</span><span class="n">value</span><span class="s"> from flow while in state </span><span class="si">$</span><span class="n">stateSnapshot</span><span class="s">&quot;</span><span class="p">)</span> <span class="c1">// note there is no state change</span>
+               <span class="p">}</span>
+            <span class="p">}</span>
+
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
 <h2 id="custom-condition-for-instate">Custom condition for inState<a class="headerlink" href="#custom-condition-for-instate" title="Permanent link">&para;</a></h2>
 <p>We already covered <code>inState&lt;State&gt;</code> that builds upon the recommended best practice that every State in your state
 machine is expressed us it&rsquo;s own type in Kotlin. Again, this is a best practice and the recommended way.</p>

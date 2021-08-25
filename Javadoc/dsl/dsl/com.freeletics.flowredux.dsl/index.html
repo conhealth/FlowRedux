@@ -971,8 +971,44 @@
   
   
     <li class="md-nav__item">
+      <a href="-in-state-builder-block/collect-while-in-state-effect/" class="md-nav__link">
+        Collect while in state effect
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="-in-state-builder-block/collect-while-in-state/" class="md-nav__link">
         Collect while in state
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="-in-state-builder-block/on-action-effect/" class="md-nav__link">
+        On action effect
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="-in-state-builder-block/on-enter-effect/" class="md-nav__link">
+        On enter effect
       </a>
     </li>
   
@@ -1632,6 +1668,10 @@
 <td>[common]<br>sealed class <a href="-change-state/">ChangeState</a><out <a href="-change-state/index.md">S</a>><br>Represents a state transition.</td>
 </tr>
 <tr>
+<td><a href="./#-771748161%2FClasslikes%2F-1936522656">CollectFlowEffectHandler</a></td>
+<td>[common]<br>typealias <a href="./#-771748161%2FClasslikes%2F-1936522656">CollectFlowEffectHandler</a>&lt;<a href="./#-771748161%2FClasslikes%2F-1936522656">T</a>, <a href="./#-771748161%2FClasslikes%2F-1936522656">InputState</a>&gt; = suspend (<a href="./#-771748161%2FClasslikes%2F-1936522656">T</a>, <a href="./#-771748161%2FClasslikes%2F-1936522656">InputState</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></td>
+</tr>
+<tr>
 <td><a href="-flat-map-policy/">FlatMapPolicy</a></td>
 <td>[common]<br>enum <a href="-flat-map-policy/">FlatMapPolicy</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a>&lt;<a href="-flat-map-policy/">FlatMapPolicy</a>&gt; <br>Defines which flatMap behavior should be applied whenever a new values is emitted</td>
 </tr>
@@ -1658,6 +1698,14 @@
 <tr>
 <td><a href="-no-state-change/">NoStateChange</a></td>
 <td>[common]<br>object <a href="-no-state-change/">NoStateChange</a> : <a href="-change-state/">ChangeState</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-nothing/index.html">Nothing</a>&gt; <br>No change, this is semantically equivalent to use <a href="-override-state/">OverrideState</a> and pass in the previous state</td>
+</tr>
+<tr>
+<td><a href="./#870428734%2FClasslikes%2F-1936522656">OnActionEffectHandler</a></td>
+<td>[common]<br>typealias <a href="./#870428734%2FClasslikes%2F-1936522656">OnActionEffectHandler</a>&lt;<a href="./#870428734%2FClasslikes%2F-1936522656">InputState</a>, <a href="./#870428734%2FClasslikes%2F-1936522656">A</a>&gt; = suspend (<a href="./#870428734%2FClasslikes%2F-1936522656">A</a>, <a href="./#870428734%2FClasslikes%2F-1936522656">InputState</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></td>
+</tr>
+<tr>
+<td><a href="./#72277089%2FClasslikes%2F-1936522656">OnEnterStateEffectHandler</a></td>
+<td>[common]<br>typealias <a href="./#72277089%2FClasslikes%2F-1936522656">OnEnterStateEffectHandler</a>&lt;<a href="./#72277089%2FClasslikes%2F-1936522656">InputState</a>&gt; = suspend (<a href="./#72277089%2FClasslikes%2F-1936522656">InputState</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></td>
 </tr>
 <tr>
 <td><a href="-override-state/">OverrideState</a></td>

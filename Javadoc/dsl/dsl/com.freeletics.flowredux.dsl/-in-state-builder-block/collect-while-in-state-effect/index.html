@@ -13,14 +13,14 @@
         <meta name="author" content="Freeletics">
       
       
-        <link rel="canonical" href="https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/_in-state-side-effect-builders/">
+        <link rel="canonical" href="https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/collect-while-in-state-effect/">
       
       <link rel="icon" href="../../../../../../images/icon-freeletics.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.5">
     
     
       
-        <title>in state side effect builders - FlowRedux</title>
+        <title>Collect while in state effect - FlowRedux</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_instatesideeffectbuilders" class="md-skip">
+        <a href="#collectwhileinstateeffect" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-               in state side effect builders
+              Collect while in state effect
             
           </span>
         </div>
@@ -900,21 +900,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../_in-state-side-effect-builders/" class="md-nav__link">
          in state side effect builders
       </a>
-      
     </li>
   
 
@@ -934,11 +924,21 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../collect-while-in-state-effect/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Collect while in state effect
       </a>
+      
     </li>
   
 
@@ -1590,15 +1590,24 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/freeletics/FlowRedux/edit/master/docs/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/_in-state-side-effect-builders.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/freeletics/FlowRedux/edit/master/docs/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-in-state-builder-block/collect-while-in-state-effect.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <p>//<a href="../../../../">dsl</a>/<a href="../../">com.freeletics.flowredux.dsl</a>/<a href="../">InStateBuilderBlock</a>/<a href="./">_inStateSideEffectBuilders</a></p>
-<h1 id="_instatesideeffectbuilders">_inStateSideEffectBuilders<a class="headerlink" href="#_instatesideeffectbuilders" title="Permanent link">&para;</a></h1>
+                <p>//<a href="../../../../">dsl</a>/<a href="../../">com.freeletics.flowredux.dsl</a>/<a href="../">InStateBuilderBlock</a>/<a href="./">collectWhileInStateEffect</a></p>
+<h1 id="collectwhileinstateeffect">collectWhileInStateEffect<a class="headerlink" href="#collectwhileinstateeffect" title="Permanent link">&para;</a></h1>
 <p>[common]\
-val <a href="./">_inStateSideEffectBuilders</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a>&lt;<a href="../../../com.freeletics.flowredux.dsl.internal/-in-state-side-effect-builder/">InStateSideEffectBuilder</a>&lt;<a href="../">InputState</a>, <a href="../">S</a>, <a href="../">A</a>&gt;&gt;</p>
+fun &lt;<a href="./">T</a>&gt; <a href="./">collectWhileInStateEffect</a>(flow: Flow&lt;<a href="./">T</a>&gt;, handler: <a href="../../#-771748161%2FClasslikes%2F-1936522656">CollectFlowEffectHandler</a>&lt;<a href="./">T</a>, <a href="../">InputState</a>&gt;)</p>
+<p>fun &lt;<a href="./">T</a>&gt; <a href="./">collectWhileInStateEffect</a>(flowBuilder: (Flow&lt;<a href="../">InputState</a>&gt;) -&gt; Flow&lt;<a href="./">T</a>&gt;, handler: <a href="../../#-771748161%2FClasslikes%2F-1936522656">CollectFlowEffectHandler</a>&lt;<a href="./">T</a>, <a href="../">InputState</a>&gt;)</p>
+<p>An effect is a way to do some work without changing the state. A typical use case is to trigger navigation as some sort of side effect or triggering analytics or do logging.</p>
+<p>This is the &ldquo;effect counterpart&rdquo; of <a href="../collect-while-in-state/">collectWhileInState</a> and follows the same logic when it triggers and when it gets canceled.</p>
+<p>Per default <a href="../../-flat-map-policy/-c-o-n-c-a-t/">FlatMapPolicy.CONCAT</a> is applied.</p>
+<p>[common]\
+fun &lt;<a href="./">T</a>&gt; <a href="./">collectWhileInStateEffect</a>(flow: Flow&lt;<a href="./">T</a>&gt;, flatMapPolicy: <a href="../../-flat-map-policy/">FlatMapPolicy</a>, handler: <a href="../../#-771748161%2FClasslikes%2F-1936522656">CollectFlowEffectHandler</a>&lt;<a href="./">T</a>, <a href="../">InputState</a>&gt;)</p>
+<p>fun &lt;<a href="./">T</a>&gt; <a href="./">collectWhileInStateEffect</a>(flowBuilder: (Flow&lt;<a href="../">InputState</a>&gt;) -&gt; Flow&lt;<a href="./">T</a>&gt;, flatMapPolicy: <a href="../../-flat-map-policy/">FlatMapPolicy</a>, handler: <a href="../../#-771748161%2FClasslikes%2F-1936522656">CollectFlowEffectHandler</a>&lt;<a href="./">T</a>, <a href="../">InputState</a>&gt;)</p>
+<p>An effect is a way to do some work without changing the state. A typical use case is to trigger navigation as some sort of side effect or triggering analytics or do logging.</p>
+<p>This is the &ldquo;effect counterpart&rdquo; of <a href="../collect-while-in-state/">collectWhileInState</a> and follows the same logic when it triggers and when it gets canceled.</p>
                 
               
               
@@ -1618,7 +1627,7 @@ val <a href="./">_inStateSideEffectBuilders</a>: <a href="https://kotlinlang.org
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../-in-state-builder-block/" class="md-footer__link md-footer__link--prev" aria-label="Previous:  in state builder block" rel="prev">
+        <a href="../_is-in-state/" class="md-footer__link md-footer__link--prev" aria-label="Previous:  is in state" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1627,20 +1636,20 @@ val <a href="./">_inStateSideEffectBuilders</a>: <a href="https://kotlinlang.org
               <span class="md-footer__direction">
                 Previous
               </span>
-               in state builder block
+               is in state
             </div>
           </div>
         </a>
       
       
         
-        <a href="../_is-in-state/" class="md-footer__link md-footer__link--next" aria-label="Next:  is in state" rel="next">
+        <a href="../collect-while-in-state/" class="md-footer__link md-footer__link--next" aria-label="Next: Collect while in state" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-               is in state
+              Collect while in state
             </div>
           </div>
           <div class="md-footer__button md-icon">

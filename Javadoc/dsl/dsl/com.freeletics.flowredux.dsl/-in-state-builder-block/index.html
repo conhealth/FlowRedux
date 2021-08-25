@@ -973,8 +973,44 @@
   
   
     <li class="md-nav__item">
+      <a href="collect-while-in-state-effect/" class="md-nav__link">
+        Collect while in state effect
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="collect-while-in-state/" class="md-nav__link">
         Collect while in state
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="on-action-effect/" class="md-nav__link">
+        On action effect
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="on-enter-effect/" class="md-nav__link">
+        On enter effect
       </a>
     </li>
   
@@ -1638,12 +1674,24 @@
 <td>[common]<br>fun &lt;<a href="collect-while-in-state/">T</a>&gt; <a href="collect-while-in-state/">collectWhileInState</a>(flowBuilder: (Flow&lt;<a href="./">InputState</a>&gt;) -&gt; Flow&lt;<a href="collect-while-in-state/">T</a>&gt;, handler: <a href="../#-584034632%2FClasslikes%2F-1936522656">InStateObserverHandler</a>&lt;<a href="collect-while-in-state/">T</a>, <a href="./">InputState</a>, <a href="./">S</a>&gt;)<br>fun &lt;<a href="collect-while-in-state/">T</a>&gt; <a href="collect-while-in-state/">collectWhileInState</a>(flow: Flow&lt;<a href="collect-while-in-state/">T</a>&gt;, handler: <a href="../#-584034632%2FClasslikes%2F-1936522656">InStateObserverHandler</a>&lt;<a href="collect-while-in-state/">T</a>, <a href="./">InputState</a>, <a href="./">S</a>&gt;)<br>fun &lt;<a href="collect-while-in-state/">T</a>&gt; <a href="collect-while-in-state/">collectWhileInState</a>(flowBuilder: (Flow&lt;<a href="./">InputState</a>&gt;) -&gt; Flow&lt;<a href="collect-while-in-state/">T</a>&gt;, flatMapPolicy: <a href="../-flat-map-policy/">FlatMapPolicy</a>, handler: <a href="../#-584034632%2FClasslikes%2F-1936522656">InStateObserverHandler</a>&lt;<a href="collect-while-in-state/">T</a>, <a href="./">InputState</a>, <a href="./">S</a>&gt;)<br>fun &lt;<a href="collect-while-in-state/">T</a>&gt; <a href="collect-while-in-state/">collectWhileInState</a>(flow: Flow&lt;<a href="collect-while-in-state/">T</a>&gt;, flatMapPolicy: <a href="../-flat-map-policy/">FlatMapPolicy</a>, handler: <a href="../#-584034632%2FClasslikes%2F-1936522656">InStateObserverHandler</a>&lt;<a href="collect-while-in-state/">T</a>, <a href="./">InputState</a>, <a href="./">S</a>&gt;)<br>Triggers every time the state machine enters this state.</td>
 </tr>
 <tr>
+<td><a href="collect-while-in-state-effect/">collectWhileInStateEffect</a></td>
+<td>[common]<br>fun &lt;<a href="collect-while-in-state-effect/">T</a>&gt; <a href="collect-while-in-state-effect/">collectWhileInStateEffect</a>(flowBuilder: (Flow&lt;<a href="./">InputState</a>&gt;) -&gt; Flow&lt;<a href="collect-while-in-state-effect/">T</a>&gt;, handler: <a href="../#-771748161%2FClasslikes%2F-1936522656">CollectFlowEffectHandler</a>&lt;<a href="collect-while-in-state-effect/">T</a>, <a href="./">InputState</a>&gt;)<br>fun &lt;<a href="collect-while-in-state-effect/">T</a>&gt; <a href="collect-while-in-state-effect/">collectWhileInStateEffect</a>(flow: Flow&lt;<a href="collect-while-in-state-effect/">T</a>&gt;, handler: <a href="../#-771748161%2FClasslikes%2F-1936522656">CollectFlowEffectHandler</a>&lt;<a href="collect-while-in-state-effect/">T</a>, <a href="./">InputState</a>&gt;)<br>fun &lt;<a href="collect-while-in-state-effect/">T</a>&gt; <a href="collect-while-in-state-effect/">collectWhileInStateEffect</a>(flowBuilder: (Flow&lt;<a href="./">InputState</a>&gt;) -&gt; Flow&lt;<a href="collect-while-in-state-effect/">T</a>&gt;, flatMapPolicy: <a href="../-flat-map-policy/">FlatMapPolicy</a>, handler: <a href="../#-771748161%2FClasslikes%2F-1936522656">CollectFlowEffectHandler</a>&lt;<a href="collect-while-in-state-effect/">T</a>, <a href="./">InputState</a>&gt;)<br>fun &lt;<a href="collect-while-in-state-effect/">T</a>&gt; <a href="collect-while-in-state-effect/">collectWhileInStateEffect</a>(flow: Flow&lt;<a href="collect-while-in-state-effect/">T</a>&gt;, flatMapPolicy: <a href="../-flat-map-policy/">FlatMapPolicy</a>, handler: <a href="../#-771748161%2FClasslikes%2F-1936522656">CollectFlowEffectHandler</a>&lt;<a href="collect-while-in-state-effect/">T</a>, <a href="./">InputState</a>&gt;)<br>An effect is a way to do some work without changing the state.</td>
+</tr>
+<tr>
 <td><a href="on/">on</a></td>
-<td>[common]<br>inline fun &lt;<a href="on/">SubAction</a> : <a href="./">A</a>&gt; <a href="on/">on</a>(noinline handler: <a href="../../com.freeletics.flowredux.dsl.internal/#672525246%2FClasslikes%2F-1936522656">OnActionHandler</a>&lt;<a href="./">InputState</a>, <a href="./">S</a>, <a href="on/">SubAction</a>&gt;)<br>inline fun &lt;<a href="on/">SubAction</a> : <a href="./">A</a>&gt; <a href="on/">on</a>(flatMapPolicy: <a href="../-flat-map-policy/">FlatMapPolicy</a>, noinline handler: <a href="../../com.freeletics.flowredux.dsl.internal/#672525246%2FClasslikes%2F-1936522656">OnActionHandler</a>&lt;<a href="./">InputState</a>, <a href="./">S</a>, <a href="on/">SubAction</a>&gt;)<br>Triggers every time an action of type <a href="on/">SubAction</a> is dispatched while the state machine is in this state.</td>
+<td>[common]<br>inline fun &lt;<a href="on/">SubAction</a> : <a href="./">A</a>&gt; <a href="on/">on</a>(noinline handler: <a href="../../com.freeletics.flowredux.dsl.internal/#672525246%2FClasslikes%2F-1936522656">OnActionHandler</a>&lt;<a href="./">InputState</a>, <a href="./">S</a>, <a href="on/">SubAction</a>&gt;)<br>Triggers every time an action of type <a href="on/">SubAction</a> is dispatched while the state machine is in this state (as specified in the surrounding in<State> condition).<br>[common]<br>inline fun &lt;<a href="on/">SubAction</a> : <a href="./">A</a>&gt; <a href="on/">on</a>(flatMapPolicy: <a href="../-flat-map-policy/">FlatMapPolicy</a>, noinline handler: <a href="../../com.freeletics.flowredux.dsl.internal/#672525246%2FClasslikes%2F-1936522656">OnActionHandler</a>&lt;<a href="./">InputState</a>, <a href="./">S</a>, <a href="on/">SubAction</a>&gt;)<br>Triggers every time an action of type <a href="on/">SubAction</a> is dispatched while the state machine is in this state.</td>
+</tr>
+<tr>
+<td><a href="on-action-effect/">onActionEffect</a></td>
+<td>[common]<br>inline fun &lt;<a href="on-action-effect/">SubAction</a> : <a href="./">A</a>&gt; <a href="on-action-effect/">onActionEffect</a>(noinline handler: <a href="../#870428734%2FClasslikes%2F-1936522656">OnActionEffectHandler</a>&lt;<a href="./">InputState</a>, <a href="on-action-effect/">SubAction</a>&gt;)<br>inline fun &lt;<a href="on-action-effect/">SubAction</a> : <a href="./">A</a>&gt; <a href="on-action-effect/">onActionEffect</a>(flatMapPolicy: <a href="../-flat-map-policy/">FlatMapPolicy</a>, noinline handler: <a href="../#870428734%2FClasslikes%2F-1936522656">OnActionEffectHandler</a>&lt;<a href="./">InputState</a>, <a href="on-action-effect/">SubAction</a>&gt;)<br>An effect is a way to do some work without changing the state.</td>
 </tr>
 <tr>
 <td><a href="on-enter/">onEnter</a></td>
 <td>[common]<br>fun <a href="on-enter/">onEnter</a>(handler: <a href="../../com.freeletics.flowredux.dsl.internal/#-1886570122%2FClasslikes%2F-1936522656">InStateOnEnterHandler</a>&lt;<a href="./">InputState</a>, <a href="./">S</a>&gt;)<br>Triggers every time the state machine enters this state.</td>
+</tr>
+<tr>
+<td><a href="on-enter-effect/">onEnterEffect</a></td>
+<td>[common]<br>fun <a href="on-enter-effect/">onEnterEffect</a>(handler: <a href="../#72277089%2FClasslikes%2F-1936522656">OnEnterStateEffectHandler</a>&lt;<a href="./">InputState</a>&gt;)<br>An effect is a way to do some work without changing the state.</td>
 </tr>
 </tbody>
 </table>
