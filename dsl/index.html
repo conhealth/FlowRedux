@@ -2201,10 +2201,12 @@ because then the defined <code>MutateState</code> causes a transitions to <code>
 <h2 id="effects">Effects<a class="headerlink" href="#effects" title="Permanent link">&para;</a></h2>
 <p>If you don&rsquo;t want to change the state but do some work without changing the state i.e. logging,
 triggering google analytics or trigger navigation then Effects is what you are looking for.</p>
-<p>The following counterparts to <code>on&lt;Action&gt;</code>, <code>onEnter</code> and <code>collectWhileInState</code> exists:
-- <code>onActionEffect&lt;Action&gt;</code>: Like <code>on&lt;Action&gt;</code> this triggers whenever the described Action is dispatched.
-- <code>onEnterEffect</code>: Like <code>onEnter</code> this triggers whenever you enter the state.
-- <code>collectWhileInStateEffect</code>: Like <code>collectWhileInState</code> this is used to collect a <code>Flow</code>.</p>
+<p>The following counterparts to <code>on&lt;Action&gt;</code>, <code>onEnter</code> and <code>collectWhileInState</code> exists:</p>
+<ul>
+<li><code>onActionEffect&lt;Action&gt;</code>: Like <code>on&lt;Action&gt;</code> this triggers whenever the described Action is dispatched.</li>
+<li><code>onEnterEffect</code>: Like <code>onEnter</code> this triggers whenever you enter the state.</li>
+<li><code>collectWhileInStateEffect</code>: Like <code>collectWhileInState</code> this is used to collect a <code>Flow</code>.</li>
+</ul>
 <p>Effects behave the same way as their counterparts, i.e. cancelation etc. works just the same way as described in the section of <code>on&lt;Action&gt;</code>, <code>onEnter</code> and <code>collectWhileInState</code>.Effects</p>
 <p>Usage:
 <div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">MyStateMachine</span> <span class="p">:</span> <span class="n">FlowReduxStateMachine</span><span class="o">&lt;</span><span class="n">State</span><span class="p">,</span> <span class="n">Action</span><span class="o">&gt;</span><span class="p">(</span><span class="n">initialState</span> <span class="o">=</span> <span class="n">LoadingState</span><span class="p">)</span> <span class="p">{</span>
