@@ -51,6 +51,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-collect-flow-effect-handler/</loc>
+         <lastmod>2021-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-collect-flow-effect-handler/handle/</loc>
+         <lastmod>2021-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-collect-flow-handler/</loc>
+         <lastmod>2021-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-collect-flow-handler/handle/</loc>
+         <lastmod>2021-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/</loc>
          <lastmod>2021-09-27</lastmod>
          <changefreq>daily</changefreq>
@@ -207,6 +227,46 @@
     </url>
     <url>
          <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-no-state-change/</loc>
+         <lastmod>2021-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-action-effect-handler/</loc>
+         <lastmod>2021-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-action-effect-handler/handle/</loc>
+         <lastmod>2021-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-action-handler/</loc>
+         <lastmod>2021-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-action-handler/handle/</loc>
+         <lastmod>2021-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-enter-handler/</loc>
+         <lastmod>2021-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-enter-handler/handle/</loc>
+         <lastmod>2021-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-enter-state-effect-handler/</loc>
+         <lastmod>2021-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-on-enter-state-effect-handler/handle/</loc>
          <lastmod>2021-09-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
