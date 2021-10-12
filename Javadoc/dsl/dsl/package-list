@@ -26,7 +26,8 @@ $dokka.location:com.freeletics.flowredux.dsl/FlatMapPolicy.MERGE/name/#/Pointing
 $dokka.location:com.freeletics.flowredux.dsl/FlatMapPolicy.MERGE/ordinal/#/PointingToDeclaration/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/-m-e-r-g-e/ordinal.md
 $dokka.location:com.freeletics.flowredux.dsl/FlatMapPolicy///PointingToDeclaration/dsl/com.freeletics.flowredux.dsl/-flat-map-policy/index.md
 $dokka.location:com.freeletics.flowredux.dsl/FlowReduxStateMachine///PointingToDeclaration/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/index.md
-$dokka.location:com.freeletics.flowredux.dsl/FlowReduxStateMachine/FlowReduxStateMachine/#TypeParam(bounds=[kotlin.Any])#kotlinx.coroutines.CoroutineScope#com.freeletics.flowredux.FlowReduxLogger?/PointingToDeclaration/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/-flow-redux-state-machine.md
+$dokka.location:com.freeletics.flowredux.dsl/FlowReduxStateMachine/FlowReduxStateMachine/#TypeParam(bounds=[kotlin.Any])#com.freeletics.flowredux.FlowReduxLogger?/PointingToDeclaration/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/-flow-redux-state-machine.md
+$dokka.location:com.freeletics.flowredux.dsl/FlowReduxStateMachine/FlowReduxStateMachine/#kotlin.Function0[TypeParam(bounds=[kotlin.Any])]#com.freeletics.flowredux.FlowReduxLogger?/PointingToDeclaration/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/-flow-redux-state-machine.md
 $dokka.location:com.freeletics.flowredux.dsl/FlowReduxStateMachine/dispatch/#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/dispatch.md
 $dokka.location:com.freeletics.flowredux.dsl/FlowReduxStateMachine/state/#/PointingToDeclaration/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/state.md
 $dokka.location:com.freeletics.flowredux.dsl/FlowReduxStoreBuilder///PointingToDeclaration/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/index.md
