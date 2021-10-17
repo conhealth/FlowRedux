@@ -702,34 +702,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../-flat-map-policy/-c-o-n-c-a-t/name/" class="md-nav__link">
-        Name
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../-flat-map-policy/-c-o-n-c-a-t/ordinal/" class="md-nav__link">
-        Ordinal
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -777,34 +749,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../-flat-map-policy/-l-a-t-e-s-t/name/" class="md-nav__link">
-        Name
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../-flat-map-policy/-l-a-t-e-s-t/ordinal/" class="md-nav__link">
-        Ordinal
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -846,34 +790,6 @@
     <li class="md-nav__item">
       <a href="../-flat-map-policy/-m-e-r-g-e/" class="md-nav__link">
         Index
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../-flat-map-policy/-m-e-r-g-e/name/" class="md-nav__link">
-        Name
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../-flat-map-policy/-m-e-r-g-e/ordinal/" class="md-nav__link">
-        Ordinal
       </a>
     </li>
   
@@ -2258,7 +2174,7 @@
                 <p>//<a href="../../../">dsl</a>/<a href="../">com.freeletics.flowredux.dsl</a>/<a href="./">MutateState</a></p>
 <h1 id="mutatestate">MutateState<a class="headerlink" href="#mutatestate" title="Permanent link">&para;</a></h1>
 <p>[common]\
-class <a href="./">MutateState</a>&lt;<a href="./">InputState</a> : <a href="./">S</a>, <a href="./">S</a>&gt;(<strong>reducer</strong>: <a href="./">InputState</a>.() -&gt; <a href="./">S</a>) : <a href="../-change-state/">ChangeState</a>&lt;<a href="./">S</a>&gt; </p>
+class <a href="./">MutateState</a>&lt;<a href="./">InputState</a> : <a href="./">S</a>, <a href="./">S</a>&gt;(reducer: <a href="./">InputState</a>.() -&gt; <a href="./">S</a>) : <a href="../-change-state/">ChangeState</a>&lt;<a href="./">S</a>&gt; </p>
 <p>Use this function if you want to &ldquo;mutate&rdquo; the current state by copying the old state and modify some properties in the copy of the new state. A common use case is to call .copy() on your state defined as data class.</p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">&para;</a></h2>
 <table>

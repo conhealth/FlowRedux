@@ -702,34 +702,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../-flat-map-policy/-c-o-n-c-a-t/name/" class="md-nav__link">
-        Name
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../-flat-map-policy/-c-o-n-c-a-t/ordinal/" class="md-nav__link">
-        Ordinal
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -777,34 +749,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../-flat-map-policy/-l-a-t-e-s-t/name/" class="md-nav__link">
-        Name
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../-flat-map-policy/-l-a-t-e-s-t/ordinal/" class="md-nav__link">
-        Ordinal
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -846,34 +790,6 @@
     <li class="md-nav__item">
       <a href="../-flat-map-policy/-m-e-r-g-e/" class="md-nav__link">
         Index
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../-flat-map-policy/-m-e-r-g-e/name/" class="md-nav__link">
-        Name
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../-flat-map-policy/-m-e-r-g-e/ordinal/" class="md-nav__link">
-        Ordinal
       </a>
     </li>
   
@@ -2272,8 +2188,8 @@
                 <p>//<a href="../../../">dsl</a>/<a href="../">com.freeletics.flowredux.dsl</a>/<a href="./">FlowReduxStoreBuilder</a></p>
 <h1 id="flowreduxstorebuilder">FlowReduxStoreBuilder<a class="headerlink" href="#flowreduxstorebuilder" title="Permanent link">&para;</a></h1>
 <p>[common]\
-@FlowPreview()</p>
-<p>@ExperimentalCoroutinesApi()</p>
+@FlowPreview</p>
+<p>@ExperimentalCoroutinesApi</p>
 <p>class <a href="./">FlowReduxStoreBuilder</a>&lt;<a href="./">S</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, <a href="./">A</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt;</p>
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
 <table>
@@ -2286,7 +2202,7 @@
 <tbody>
 <tr>
 <td><a href="in-state/">inState</a></td>
-<td>[common]<br>inline fun &lt;<a href="in-state/">SubState</a> : <a href="./">S</a>&gt; <a href="in-state/">inState</a>(noinline block: <a href="../-in-state-builder-block/">InStateBuilderBlock</a>&lt;<a href="in-state/">SubState</a>, <a href="./">S</a>, <a href="./">A</a>&gt;.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)<br>Define what happens if the store is in a certain state.<br>[common]<br>inline fun &lt;<a href="in-state/">SubState</a> : <a href="./">S</a>&gt; <a href="in-state/">inState</a>(noinline additionalIsInState: (<a href="in-state/">SubState</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, noinline block: <a href="../-in-state-builder-block/">InStateBuilderBlock</a>&lt;<a href="in-state/">SubState</a>, <a href="./">S</a>, <a href="./">A</a>&gt;.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)<br>This variation allows you to specify is a mix between inferring the condition of the generic function type and additionally can specify and ADDITIONAL condition that also must be true in addition to the check that the type as specified as generic fun parameter is an instance of the current state.</td>
+<td>[common]<br>inline fun &lt;<a href="in-state/">SubState</a> : <a href="./">S</a>&gt; <a href="in-state/">inState</a>(noinline block: <a href="../-in-state-builder-block/">InStateBuilderBlock</a>&lt;<a href="in-state/">SubState</a>, <a href="./">S</a>, <a href="./">A</a>&gt;.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)<br>Define what happens if the store is in a certain state. &ldquo;In a certain state&rdquo; condition is true if state is instance of the type specified as generic function parameter.<br>[common]<br>inline fun &lt;<a href="in-state/">SubState</a> : <a href="./">S</a>&gt; <a href="in-state/">inState</a>(noinline additionalIsInState: (<a href="in-state/">SubState</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, noinline block: <a href="../-in-state-builder-block/">InStateBuilderBlock</a>&lt;<a href="in-state/">SubState</a>, <a href="./">S</a>, <a href="./">A</a>&gt;.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)<br>This variation allows you to specify is a mix between inferring the condition of the generic function type and additionally can specify and ADDITIONAL condition that also must be true in addition to the check that the type as specified as generic fun parameter is an instance of the current state.</td>
 </tr>
 <tr>
 <td><a href="in-state-with-condition/">inStateWithCondition</a></td>
