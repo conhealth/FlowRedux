@@ -2204,7 +2204,7 @@
 <p>[common]\
 @FlowPreview</p>
 <p>@ExperimentalCoroutinesApi</p>
-<p>abstract class <a href="./">FlowReduxStateMachine</a>&lt;<a href="./">S</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, <a href="./">A</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt;(initialStateSupplier: () -&gt; <a href="./">S</a>, logger: FlowReduxLogger?)</p>
+<p>abstract class <a href="./">FlowReduxStateMachine</a>&lt;<a href="./">S</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, <a href="./">A</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt;(initialStateSupplier: () -&gt; <a href="./">S</a>, logger: FlowReduxLogger?) : StateMachine&lt;<a href="./">S</a>, <a href="./">A</a>&gt;</p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -2231,7 +2231,7 @@
 <tbody>
 <tr>
 <td><a href="dispatch/">dispatch</a></td>
-<td>[common]<br>suspend fun <a href="dispatch/">dispatch</a>(action: <a href="./">A</a>)</td>
+<td>[common]<br>open suspend override fun <a href="dispatch/">dispatch</a>(action: <a href="./">A</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -2246,7 +2246,7 @@
 <tbody>
 <tr>
 <td><a href="state/">state</a></td>
-<td>[common]<br>val <a href="state/">state</a>: Flow&lt;<a href="./">S</a>&gt;</td>
+<td>[common]<br>open override val <a href="state/">state</a>: Flow&lt;<a href="./">S</a>&gt;</td>
 </tr>
 </tbody>
 </table>
