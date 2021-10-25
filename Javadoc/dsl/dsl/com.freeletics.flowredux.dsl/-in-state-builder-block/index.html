@@ -1278,6 +1278,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="state-machine/" class="md-nav__link">
+        State machine
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1961,6 +1975,67 @@
 
             
           
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_2_2_5" type="checkbox" id="__nav_6_1_2_2_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_1_2_2_5">
+           sub state machine side effect builder
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label=" sub state machine side effect builder" data-md-level="5">
+        <label class="md-nav__title" for="__nav_6_1_2_2_5">
+          <span class="md-nav__icon md-icon"></span>
+           sub state machine side effect builder
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../com.freeletics.flowredux.dsl.internal/-sub-state-machine-side-effect-builder/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../com.freeletics.flowredux.dsl.internal/-sub-state-machine-side-effect-builder/-sub-state-machine-side-effect-builder/" class="md-nav__link">
+         sub state machine side effect builder
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2284,6 +2359,10 @@
 <tr>
 <td><a href="on-enter-effect/">onEnterEffect</a></td>
 <td>[common]<br>fun <a href="on-enter-effect/">onEnterEffect</a>(handler: <a href="../-on-enter-state-effect-handler/">OnEnterStateEffectHandler</a>&lt;<a href="./">InputState</a>&gt;)<br>An effect is a way to do some work without changing the state. A typical use case is to trigger navigation as some sort of side effect or triggering analytics or do logging.</td>
+</tr>
+<tr>
+<td><a href="state-machine/">stateMachine</a></td>
+<td>[common]<br>fun &lt;<a href="state-machine/">SubStateMachineState</a> : <a href="./">S</a>&gt; <a href="state-machine/">stateMachine</a>(stateMachine: <a href="../-flow-redux-state-machine/">FlowReduxStateMachine</a>&lt;<a href="state-machine/">SubStateMachineState</a>, <a href="./">A</a>&gt;, stateMapper: (<a href="./">InputState</a>, <a href="state-machine/">SubStateMachineState</a>) -&gt; <a href="../-change-state/">ChangeState</a>&lt;<a href="./">S</a>&gt; = { _, substateMachineState -&gt;             OverrideState(                 substateMachineState             )         })<br>fun &lt;<a href="state-machine/">SubStateMachineState</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, <a href="state-machine/">SubStateMachineAction</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <a href="state-machine/">stateMachine</a>(stateMachine: <a href="../-flow-redux-state-machine/">FlowReduxStateMachine</a>&lt;<a href="state-machine/">SubStateMachineState</a>, <a href="state-machine/">SubStateMachineAction</a>&gt;, actionMapper: (<a href="./">A</a>) -&gt; <a href="state-machine/">SubStateMachineAction</a>, stateMapper: (<a href="./">InputState</a>, <a href="state-machine/">SubStateMachineState</a>) -&gt; <a href="../-change-state/">ChangeState</a>&lt;<a href="./">S</a>&gt;)<br>fun &lt;<a href="state-machine/">SubStateMachineState</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, <a href="state-machine/">SubStateMachineAction</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <a href="state-machine/">stateMachine</a>(stateMachineFactory: (<a href="./">InputState</a>) -&gt; <a href="../-flow-redux-state-machine/">FlowReduxStateMachine</a>&lt;<a href="state-machine/">SubStateMachineState</a>, <a href="state-machine/">SubStateMachineAction</a>&gt;, actionMapper: (<a href="./">A</a>) -&gt; <a href="state-machine/">SubStateMachineAction</a>, stateMapper: (<a href="./">InputState</a>, <a href="state-machine/">SubStateMachineState</a>) -&gt; <a href="../-change-state/">ChangeState</a>&lt;<a href="./">S</a>&gt;)</td>
 </tr>
 </tbody>
 </table>
