@@ -637,14 +637,14 @@
       
       
         <label class="md-nav__link" for="__nav_6_1_2_1_7">
-           flat map policy
+           execution policy
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label=" flat map policy" data-md-level="5">
+      <nav class="md-nav" aria-label=" execution policy" data-md-level="5">
         <label class="md-nav__title" for="__nav_6_1_2_1_7">
           <span class="md-nav__icon md-icon"></span>
-           flat map policy
+           execution policy
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -654,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../-flat-map-policy/" class="md-nav__link">
+      <a href="../../-execution-policy/" class="md-nav__link">
         Index
       </a>
     </li>
@@ -677,14 +677,14 @@
       
       
         <label class="md-nav__link" for="__nav_6_1_2_1_7_2">
-           c o n c a t
+           c a n c e l  p r e v i o u s
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label=" c o n c a t" data-md-level="6">
+      <nav class="md-nav" aria-label=" c a n c e l  p r e v i o u s" data-md-level="6">
         <label class="md-nav__title" for="__nav_6_1_2_1_7_2">
           <span class="md-nav__icon md-icon"></span>
-           c o n c a t
+           c a n c e l  p r e v i o u s
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -694,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../-flat-map-policy/-c-o-n-c-a-t/" class="md-nav__link">
+      <a href="../../-execution-policy/-c-a-n-c-e-l_-p-r-e-v-i-o-u-s/" class="md-nav__link">
         Index
       </a>
     </li>
@@ -724,14 +724,14 @@
       
       
         <label class="md-nav__link" for="__nav_6_1_2_1_7_3">
-           l a t e s t
+           o r d e r e d
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label=" l a t e s t" data-md-level="6">
+      <nav class="md-nav" aria-label=" o r d e r e d" data-md-level="6">
         <label class="md-nav__title" for="__nav_6_1_2_1_7_3">
           <span class="md-nav__icon md-icon"></span>
-           l a t e s t
+           o r d e r e d
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -741,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../-flat-map-policy/-l-a-t-e-s-t/" class="md-nav__link">
+      <a href="../../-execution-policy/-o-r-d-e-r-e-d/" class="md-nav__link">
         Index
       </a>
     </li>
@@ -771,14 +771,14 @@
       
       
         <label class="md-nav__link" for="__nav_6_1_2_1_7_4">
-           m e r g e
+           u n o r d e r e d
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label=" m e r g e" data-md-level="6">
+      <nav class="md-nav" aria-label=" u n o r d e r e d" data-md-level="6">
         <label class="md-nav__title" for="__nav_6_1_2_1_7_4">
           <span class="md-nav__icon md-icon"></span>
-           m e r g e
+           u n o r d e r e d
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -788,7 +788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../-flat-map-policy/-m-e-r-g-e/" class="md-nav__link">
+      <a href="../../-execution-policy/-u-n-o-r-d-e-r-e-d/" class="md-nav__link">
         Index
       </a>
     </li>
@@ -2269,22 +2269,22 @@ fun &lt;<a href="./">T</a>&gt; <a href="./">collectWhileInState</a>(flow: Flow&l
 <p>Triggers every time the state machine enters this state. The passed <a href="./">flow</a> will be collected and any emission will be passed to <a href="./">handler</a>.</p>
 <p>The collection as well as any ongoing <a href="./">handler</a> is cancelled when leaving this state.</p>
 <p><a href="./">handler</a> will only be called for a new emission from <a href="./">flow</a> after a previous <a href="./">handler</a> invocation completed.</p>
-<p>Per default <a href="../../-flat-map-policy/-c-o-n-c-a-t/">FlatMapPolicy.CONCAT</a> is applied.</p>
+<p>Per default <a href="../../-execution-policy/-o-r-d-e-r-e-d/">ExecutionPolicy.ORDERED</a> is applied.</p>
 <p>[common]\
-fun &lt;<a href="./">T</a>&gt; <a href="./">collectWhileInState</a>(flow: Flow&lt;<a href="./">T</a>&gt;, flatMapPolicy: <a href="../../-flat-map-policy/">FlatMapPolicy</a>, handler: <a href="../../-collect-flow-handler/">CollectFlowHandler</a>&lt;<a href="./">T</a>, <a href="../">InputState</a>, <a href="../">S</a>&gt;)</p>
+fun &lt;<a href="./">T</a>&gt; <a href="./">collectWhileInState</a>(flow: Flow&lt;<a href="./">T</a>&gt;, executionPolicy: <a href="../../-execution-policy/">ExecutionPolicy</a>, handler: <a href="../../-collect-flow-handler/">CollectFlowHandler</a>&lt;<a href="./">T</a>, <a href="../">InputState</a>, <a href="../">S</a>&gt;)</p>
 <p>Triggers every time the state machine enters this state. The passed <a href="./">flow</a> will be collected and any emission will be passed to <a href="./">handler</a>.</p>
 <p>The collection as well as any ongoing <a href="./">handler</a> is cancelled when leaving this state.</p>
-<p><a href="./">flatMapPolicy</a> is used to determine the behavior when a new emission from <a href="./">flow</a> arrives before the previous <a href="./">handler</a> invocation completed.</p>
+<p><a href="./">executionPolicy</a> is used to determine the behavior when a new emission from <a href="./">flow</a> arrives before the previous <a href="./">handler</a> invocation completed.</p>
 <p>[common]\
 fun &lt;<a href="./">T</a>&gt; <a href="./">collectWhileInState</a>(flowBuilder: <a href="../../-flow-builder/">FlowBuilder</a>&lt;<a href="../">InputState</a>, <a href="./">T</a>&gt;, handler: <a href="../../-collect-flow-handler/">CollectFlowHandler</a>&lt;<a href="./">T</a>, <a href="../">InputState</a>, <a href="../">S</a>&gt;)</p>
 <p>Triggers every time the state machine enters this state. <a href="./">flowBuilder</a> will get a Flow that emits the current <a href="../">InputState</a> and any change to it. The transformed Flow that <a href="./">flowBuilder</a> returns will be collected and any emission will be passed to <a href="./">handler</a>.</p>
 <p>The collection as well as any ongoing <a href="./">handler</a> is cancelled when leaving this state.</p>
 <p><a href="./">handler</a> will only be called for a new emission from <a href="./">flowBuilder</a>&lsquo;s Flow after a previous <a href="./">handler</a> invocation completed.</p>
 <p>[common]\
-fun &lt;<a href="./">T</a>&gt; <a href="./">collectWhileInState</a>(flowBuilder: <a href="../../-flow-builder/">FlowBuilder</a>&lt;<a href="../">InputState</a>, <a href="./">T</a>&gt;, flatMapPolicy: <a href="../../-flat-map-policy/">FlatMapPolicy</a>, handler: <a href="../../-collect-flow-handler/">CollectFlowHandler</a>&lt;<a href="./">T</a>, <a href="../">InputState</a>, <a href="../">S</a>&gt;)</p>
+fun &lt;<a href="./">T</a>&gt; <a href="./">collectWhileInState</a>(flowBuilder: <a href="../../-flow-builder/">FlowBuilder</a>&lt;<a href="../">InputState</a>, <a href="./">T</a>&gt;, executionPolicy: <a href="../../-execution-policy/">ExecutionPolicy</a>, handler: <a href="../../-collect-flow-handler/">CollectFlowHandler</a>&lt;<a href="./">T</a>, <a href="../">InputState</a>, <a href="../">S</a>&gt;)</p>
 <p>Triggers every time the state machine enters this state. <a href="./">flowBuilder</a> will get a Flow that emits the current <a href="../">InputState</a> and any change to it. The transformed Flow that <a href="./">flowBuilder</a> returns will be collected and any emission will be passed to <a href="./">handler</a>.</p>
 <p>The collection as well as any ongoing <a href="./">handler</a> is cancelled when leaving this state.</p>
-<p><a href="./">flatMapPolicy</a> is used to determine the behavior when a new emission from <a href="./">flowBuilder</a>&lsquo;s Flow arrives before the previous <a href="./">handler</a> invocation completed.</p>
+<p><a href="./">executionPolicy</a> is used to determine the behavior when a new emission from <a href="./">flowBuilder</a>&lsquo;s Flow arrives before the previous <a href="./">handler</a> invocation completed.</p>
                 
               
               
