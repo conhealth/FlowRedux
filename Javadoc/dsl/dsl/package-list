@@ -27,6 +27,7 @@ $dokka.location:com.freeletics.flowredux.dsl/FlowReduxStateMachine///PointingToD
 $dokka.location:com.freeletics.flowredux.dsl/FlowReduxStateMachine/FlowReduxStateMachine/#TypeParam(bounds=[kotlin.Any])#com.freeletics.flowredux.FlowReduxLogger?/PointingToDeclaration/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/-flow-redux-state-machine.md
 $dokka.location:com.freeletics.flowredux.dsl/FlowReduxStateMachine/FlowReduxStateMachine/#kotlin.Function0[TypeParam(bounds=[kotlin.Any])]#com.freeletics.flowredux.FlowReduxLogger?/PointingToDeclaration/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/-flow-redux-state-machine.md
 $dokka.location:com.freeletics.flowredux.dsl/FlowReduxStateMachine/dispatch/#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/dispatch.md
+$dokka.location:com.freeletics.flowredux.dsl/FlowReduxStateMachine/initialState/#/PointingToDeclaration/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/initial-state.md
 $dokka.location:com.freeletics.flowredux.dsl/FlowReduxStateMachine/state/#/PointingToDeclaration/dsl/com.freeletics.flowredux.dsl/-flow-redux-state-machine/state.md
 $dokka.location:com.freeletics.flowredux.dsl/FlowReduxStoreBuilder///PointingToDeclaration/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/index.md
 $dokka.location:com.freeletics.flowredux.dsl/FlowReduxStoreBuilder/FlowReduxStoreBuilder/#/PointingToDeclaration/dsl/com.freeletics.flowredux.dsl/-flow-redux-store-builder/-flow-redux-store-builder.md
