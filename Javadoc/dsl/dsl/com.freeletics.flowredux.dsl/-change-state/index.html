@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://freeletics.github.io/FlowRedux/Javadoc/dsl/dsl/com.freeletics.flowredux.dsl/-change-state/">
       
       <link rel="icon" href="../../../../../images/icon-freeletics.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.9">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.10">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.2b4465f4.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.d6be258b.min.css">
       
         
         <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -2005,8 +2005,11 @@
 <p>[common]\
 sealed class <a href="./">ChangeState</a>&lt;out <a href="./">S</a>&gt;</p>
 <p>Represents a state transition. Either use</p>
-<ul><li>[MutateState](../-mutate-state/index.md) to mutate the current state. You get a lambda block with the current state as input and expects the next state as output.</li><li>[OverrideState](../-override-state/index.md) to trigger a transition from one state to the next one by simply overriding whatever state was there before. Be careful using this especially if you have handle multiple actions or collect flows within the same state as it really overrides the full state and you may loose information or partial state changes triggered by them. Use [MutateState](../-mutate-state/index.md) in that case.</li><li>[NoStateChange](../-no-state-change/index.md) to indicate that this function did not change the state at all. There should be only very little use case for [NoStateChange](../-no-state-change/index.md). So only use it if you actually know what you do.</li></ul>
-
+<ul>
+<li><a href="../-mutate-state/">MutateState</a> to mutate the current state. You get a lambda block with the current state as input and expects the next state as output.</li>
+<li><a href="../-override-state/">OverrideState</a> to trigger a transition from one state to the next one by simply overriding whatever state was there before. Be careful using this especially if you have handle multiple actions or collect flows within the same state as it really overrides the full state and you may loose information or partial state changes triggered by them. Use <a href="../-mutate-state/">MutateState</a> in that case.</li>
+<li><a href="../-no-state-change/">NoStateChange</a> to indicate that this function did not change the state at all. There should be only very little use case for <a href="../-no-state-change/">NoStateChange</a>. So only use it if you actually know what you do.</li>
+</ul>
 <p><a href="./">ChangeState</a> doesnt allow you to directly access any property. Then you may wonder how do you write unit test for one of your functions that return a <a href="./">ChangeState</a>? You need to call ChangeState.reduce to get the actual result of the change state.</p>
 <h2 id="inheritors">Inheritors<a class="headerlink" href="#inheritors" title="Permanent link">&para;</a></h2>
 <table>
@@ -2096,10 +2099,10 @@ sealed class <a href="./">ChangeState</a>&lt;out <a href="./">S</a>&gt;</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../../assets/javascripts/workers/search.092fa1f6.min.js"}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.960e086b.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.e3b2bf44.min.js"></script>
       
     
   </body>
