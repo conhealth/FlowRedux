@@ -33,7 +33,6 @@ kotlin {
             dependencies {
                 api project(":flowredux")
                 api libraries.flMadStateMachine
-                implementation libraries.stately
             }
         }
 

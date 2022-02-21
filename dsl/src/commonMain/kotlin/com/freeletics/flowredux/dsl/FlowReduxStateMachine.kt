@@ -1,7 +1,5 @@
 package com.freeletics.flowredux.dsl
 
-import co.touchlab.stately.concurrency.AtomicInt
-import co.touchlab.stately.concurrency.value
 import com.freeletics.flowredux.FlowReduxLogger
 import com.freeletics.mad.statemachine.StateMachine
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -11,6 +9,8 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.onCompletion
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.receiveAsFlow
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 
 @FlowPreview
 @ExperimentalCoroutinesApi
@@ -24,7 +24,8 @@ public abstract class FlowReduxStateMachine<S : Any, A : Any>(
     private val inputActions = Channel<A>()
     private lateinit var outputState: Flow<S>
 
-    private val activeFlowCounter = AtomicInt(0)
+    private val activeFlowCounterMutex = Mutex()
+    private var activeFlowCounter = 0
 
     public constructor(initialState: S, logger: FlowReduxLogger? = null) : this(
         logger = logger,
@@ -42,10 +43,14 @@ public abstract class FlowReduxStateMachine<S : Any, A : Any>(
             .receiveAsFlow()
             .reduxStore(logger, initialState, specBlock)
             .onStart {
-                activeFlowCounter.incrementAndGet()
+                activeFlowCounterMutex.withLock {
+                    activeFlowCounter++
+                }
             }
             .onCompletion {
-                activeFlowCounter.decrementAndGet()
+                activeFlowCounterMutex.withLock {
+                    activeFlowCounter--
+                }
             }
     }
 
@@ -57,12 +62,14 @@ public abstract class FlowReduxStateMachine<S : Any, A : Any>(
 
     override suspend fun dispatch(action: A) {
         checkSpecBlockSet()
-        if (activeFlowCounter.value <= 0) {
-            throw IllegalStateException(
-                "Cannot dispatch action $action because state Flow of this " +
-                        "FlowReduxStateMachine is not collected yet. " +
-                        "Start collecting the state Flow before dispatching any action."
-            )
+        activeFlowCounterMutex.withLock {
+            if (activeFlowCounter <= 0) {
+                throw IllegalStateException(
+                    "Cannot dispatch action $action because state Flow of this " +
+                            "FlowReduxStateMachine is not collected yet. " +
+                            "Start collecting the state Flow before dispatching any action."
+                )
+            }
         }
         inputActions.send(action)
     }
